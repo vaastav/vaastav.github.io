@@ -1,7 +1,85 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p> I am hosted with Github pages. </p>
-</body>
+	<head>
+		<title>Vaastav Anand</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href = "css/bootstrap.min.css" rel = "stylesheet">
+		<link href = "css/styles.css" rel = "stylesheet">
+	    <!-- Custom CSS -->
+		<link href="css/stylish-portfolio.css" rel="stylesheet">
+
+		<!-- Custom Fonts -->
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- Navigation -->
+		<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+		<nav id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+				<li class="sidebar-brand">
+					<a href="#top">Start Bootstrap</a>
+				</li>
+				<li>
+					<a href="#top">Home</a>
+				</li>
+				<li>
+					<a href="#about">About</a>
+				</li>
+				<li>
+					<a href="#services">Services</a>
+				</li>
+				<li>
+					<a href="#portfolio">Portfolio</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<!-- Header -->
+		<header id="top" class="header">
+			<div class="text-vertical-center">
+				<h1>Vaastav Anand</h1>
+				<h3>Computer Programmer/Scientist &amp; Nerd </h3>
+				<br>
+				<a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+			</div>
+		</header>
+		<script src = "js/jquery.js"></script>
+		<script src = "js/bootstrap.js"></script>
+		    <!-- Custom Theme JavaScript -->
+		<script>
+		// Closes the sidebar menu
+		$("#menu-close").click(function(e) {
+			e.preventDefault();
+			$("#sidebar-wrapper").toggleClass("active");
+		});
+
+		// Opens the sidebar menu
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#sidebar-wrapper").toggleClass("active");
+		});
+
+		// Scrolls to the selected menu item on the page
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+		</script>
+	</body>
 </html>
