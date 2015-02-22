@@ -5,13 +5,15 @@ body{
 }
 
 body{
-	font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: "Lucida Console",Monaco,monospace;
+	background: black;
+	color: green;
 }
 
 .text-vertical-center {
     display: table-cell;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .text-vertical-center h1 {
