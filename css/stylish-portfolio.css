@@ -178,6 +178,11 @@ hr.small {
     margin-bottom: 30px;
 }
 
+/* Stats */
+.stats{
+	padding: 50px 0;
+}
+
 /* Callout */
 
 .callout {
