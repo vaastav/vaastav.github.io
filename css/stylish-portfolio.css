@@ -61,6 +61,7 @@ body {
 
 hr.small {
     max-width: 100px;
+	border-color: red;
 }
 
 /* Side Menu */
@@ -205,6 +206,8 @@ hr.small {
 
 .img-portfolio {
     margin: 0 auto;
+	height: 300px;
+	width: 400px;
 }
 
 .img-portfolio:hover {
