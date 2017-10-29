@@ -29,6 +29,10 @@ body {
     font-weight: 700;
 }
 
+.course-list li{
+    color: #fff;
+}
+
 /* Custom Button Styles */
 
 .btn-dark {
