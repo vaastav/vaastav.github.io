@@ -23,6 +23,23 @@
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
+    <style>
+        .courses {
+            display:none;
+        }
+    </style>
+    <script>
+    function showDiv(param) {
+        var display = document.getElementById(param).style.display;
+        if (display == "block")
+        {
+            document.getElementById(param).style.display = "none";
+        } else
+        {
+            document.getElementById(param).style.display = "block";
+        }
+    }
+    </script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -106,17 +123,85 @@
 			</header>
 			<div class="row" style="text-align:center">
                 <div class="col-md-12">
-					    <h3><b> The University of British Columbia </b></h3>
+                        <h3><b> The University of British Columbia <span><a style="color:#fff; font-size:75%" onClick="showDiv('ubc')">&#9660;</a></span></b></h3>
+                        <div class="courses" id="ubc">
+                            <div class="row">
+                            <div class="col-md-4">
+                                <h4><b>CPSC 415 Advanced Operating Systems</b></h4>
+                                <h4><b>CPSC 411 Introduction to Compiler Construction</b></h4>
+                                <h4><b>CPSC 320 Intermediate Algorithm Design and Analysis</b></h4>
+                                <h4><b>CPSC 313 Computer Hardware and Operaitng Systems</b></h4>
+                                <h4><b>CPSC 310 Introduction to Software Engineering</b></h4>
+                                <h4><b>CPSC 221 Basic Algorithms and Data Structures</b></h4>
+                                <h4><b>CPSC 189 Systematic Program Design in Python</b></h4>
+                            </div>
+                            <div class="col-md-4">
+                                <h4><b>CPSC 421 Introduction to Theory of Computing</b></h4>
+                                <h4><b>CPSC 490 Problem Solving Seminar</b></h4>
+                                <h4><b>CPSC 319 Software Engineering Project</b></h4>
+                                <h4><b>CPSC 349 Honours Research Seminar</b></h4>
+                                <h4><b>CPSC 302 Numerical Computation for Algebraic Problems</b></h4>
+                                <h4><b>CPSC 213 Introduction to Computer Systems</b></h4>       
+                                <h4><b>CPSC 121 Models of Computation</b></h4>
+                            </div>
+                            <div class="col-md-4">
+                                <h4><b>CPSC 425 Computer Vision</b></h4>
+                                <h4><b>CPSC 340 Machine Learning and Data Mining</b></h4>
+                                <h4><b>CPSC 317 Internet Computing</b></h4>
+                                <h4><b>CPSC 311 Definition of Programming Languages</b></h4>
+                                <h4><b>CPSC 304 Introduction to Relational Databases</b></h4>
+                                <h4><b>CPSC 210 Software Construction</b></h4>
+                                <h4><b>CPSC 110 Computation, Programs and Programming</b></h4>
+                            </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h4><b>ASTR 333 Exoplanets and Astrobiology</b></h4>
+                                    <h4><b>ASTR 200 Frontiers of Astrophysics</b></h4>
+                                    <h4><b>PHYS 109 Enriched Experimental Physics</b></h4>
+                                    <h4><b>PHYS 108 Enriched Physics II</b></h4>
+                                    <h4><b>PHYS 107 Enriched Physics I</b></h4>
+                                    <h4><b>BIOL 111 Introduction to Modern Biology</b></h4>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4><b>CRWR 209 Introduction to Writing Fiction</b></h4>
+                                    <h4><b>ENGL 110 Approaches to Literature</b></h4>
+                                    <h4><b>FREN 101 Beginners' French I</b></h4>
+                                    <h4><b>ITAL 101 First-Year Italian I</b></h4>
+                                    <h4><b>SCIE 113 First-Year Seminar in Science</b></h4>
+                                    <h4><b>PSYC 102 Introduction to Social, Personality Psychology</b></h4>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4><b>STAT 241 Introductory Probability and Statistics</b></h4>
+                                    <h4><b>MATH 221 Matrix Algebra</b></h4>
+                                    <h4><b>MATH 200 Calculus III</b></h4>
+                                    <h4><b>MATH 101 Integral Calculus</b></h4>
+                                    <h4><b>MATH 100 Differential Calculus</b></h4>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
             <div class="row" style="text-align:center">
                 <div class="col-md-12">
-					    <h3><b> Vancouver Institute of Visual Analytics </b></h3>
+					    <h3><b> Vancouver Institute of Visual Analytics <span><a style="color:#fff; font-size:75%" onClick="showDiv('viva')">&#9660;</a></span></b></h3>
+                        <div class="courses" id="viva">
+                            <div class="row">
+                            <div class="col-md-6">
+                                <h4><b>Visual Analytics 101 - Tools, Techniques and Theory</b></h4>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                            <h4><b>Visual Analytics 102 - Applications of Visual Analytics</b></h4>
+                            </div>
+                        </div>
                 </div>
             </div>
             <div class="row" style="text-align:center">
                 <div class="col-md-12">
-					    <h3><b> Online MOOCs </b></h3>
+					    <h3><b> Online MOOCs <span><a style="color:#fff; font-size:75%" onClick="showDiv('mooc')">&#9660;</a></span></b></h3>
+                        <div class="courses" id="mooc">
+                        </div>
                 </div>
             </div>
 		</div>
