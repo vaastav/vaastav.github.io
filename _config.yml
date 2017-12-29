@@ -1,4 +1,4 @@
 name: Vaastav Anand
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-theme: midnight
+theme: minima
