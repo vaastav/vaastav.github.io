@@ -28,10 +28,6 @@ p {
     line-height: 1.4em;
     color: #333;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
 
 ul.posts { 
     margin: 20px auto 40px; 
