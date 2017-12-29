@@ -18,40 +18,19 @@
     </head>
     <body>
         <!-- Navigation -->
-        <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-        <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <a id="menu-close" href="#" class="btn btn-dark btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-                <li class="sidebar-brand">
-                    <a href="#top">Menu</a>
-                </li>
-                <li>
-                    <a href="/index.html#top">Home</a>
-                </li>
-                <li>
-                    <a href="/index.html#about">About</a>
-                </li>
-                <li>
-                    <a href="/index.html#portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a href="/index.html#skills">Skills</a>
-                </li>
-                <li>
-                    <a href="/index.html#contact">Contact</a>
-                </li>
-                <li>
-                    <a href="/blog">Blog</a>
-                </li>
-            </ul>
-        </nav>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+        		<li><a href="/blog">Blog</a></li>
+    		</ul>
+		</nav>
         
         {{ content }}
         
         </div><!-- /.container -->
         <!-- Footer -->
-        <footer style="background-color:#282828" id="contact">
-            <div class="container" style="color:#3500d3">
+        <footer id="contact">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-1 text-center">
                         <h4><strong>Vaastav Anand</strong>
@@ -76,36 +55,5 @@
             </div>
         </footer>
 
-        <!-- Custom Theme JavaScript -->
-        <script>
-            // Closes the sidebar menu
-            $("#menu-close").click(function(e) {
-                e.preventDefault();
-                $("#sidebar-wrapper").toggleClass("active");
-            });
-        
-            // Opens the sidebar menu
-            $("#menu-toggle").click(function(e) {
-                e.preventDefault();
-                $("#sidebar-wrapper").toggleClass("active");
-            });
-        
-            // Scrolls to the selected menu item on the page
-            $(function() {
-                $('a[href*=#]:not([href=#])').click(function() {
-                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-        
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                        if (target.length) {
-                            $('html,body').animate({
-                                scrollTop: target.offset().top
-                            }, 1000);
-                            return false;
-                        }
-                    }
-                });
-            });
-            </script>
     </body>
 </html>
