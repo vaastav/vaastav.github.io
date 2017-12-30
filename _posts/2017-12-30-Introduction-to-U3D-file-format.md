@@ -78,7 +78,7 @@ Each block must be 32-bit or 4-byte aligned with each other. This basically mean
 
 Here is an image describing the structure of the blocks in U3D file which has been successful for me.
 
-![alt text]({{ "assets/file_structure.png" | absolute_url }})
+![file_structure]({{ "assets/file_structure.png" | absolute_url }})
 
 ### What is a Block?
 
