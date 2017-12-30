@@ -1,6 +1,7 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
     height: 100%;
 }
 nav ul, footer ul {
@@ -40,7 +41,4 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
-}
-#full {
-    height: 100%;
 }
