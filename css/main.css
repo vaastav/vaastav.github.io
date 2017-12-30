@@ -13,6 +13,10 @@ body {
     height: 100%;
 }
 
+footer {
+    margin: 0px 0px 0px 0px;
+}
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
