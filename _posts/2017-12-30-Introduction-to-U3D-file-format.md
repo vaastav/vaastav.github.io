@@ -78,9 +78,7 @@ Each block must be 32-bit or 4-byte aligned with each other. This basically mean
 
 Here is an image describing the structure of the blocks in U3D file which has been successful for me.
 
-![alt text][structure]
-
-[structure]: https://github.com/vaastav/IntroductionToU3D/blob/master/file_structure.png
+![alt text](https://github.com/vaastav/IntroductionToU3D/blob/master/file_structure.png)
 
 ### What is a Block?
 
