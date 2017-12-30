@@ -3,7 +3,6 @@ layout: post
 title: "A Beginner's Introduction to U3D file format"
 date: 2017-12-30
 ---
-# A Beginner Introduction to U3D Files
 
 This post will serve as a simple introduction to the U3D file format specificaton for any person who needs to write an output or input stream for U3D objects or is genuinely interested in 3D formats. The goal of this post is to provide the details, DOs and DONTs for everything required to write a U3D writer.
 
