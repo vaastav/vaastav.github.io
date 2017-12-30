@@ -2,13 +2,11 @@ body {
     margin: 0px;
     padding: 0px;
     width: 100%;
-    height: 100%;
 }
 
 #full {
     margin: 60px auto;
     width: 70%;
-    height: 100%;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
