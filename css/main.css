@@ -37,6 +37,11 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
 }
 ul.posts { 
     margin: 20px auto 40px; 
