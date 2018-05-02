@@ -19,6 +19,9 @@
 
     <link href-"css/main.css" rel="stylesheet">
 
+    <link href="css/rotating-card.css" rel="stylesheet" />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
@@ -354,53 +357,243 @@
                     <h2 style="color:#3500d3"><b>Projects</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <h4>Project JOKER</h4>
-								<a href="projects/joker.html">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                </a>
-                            </div>
+                        <div class="col-md-4">
+                                    <div class="card-container">
+                                            <div class="card">
+                                                <div class="front">
+                                                    <div class="cover">
+                                                        <img src="img/portfolio-4.jpg"/>
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="main">
+                                                            <h3 class="name">Fantasy Premier League Manager</h3>
+                                                            <p class="profession">Python</p>
+                                                            <p class="text-center">A data scraper program that scrapes data using the fantasy premier league API about all the players adn teams who have featured during the current English Premier League season.</p>
+                                                        </div>
+                                                        <div class="footer">
+                                                            <div class="rating">
+                                                                <i class="fa fa-mail-forward"></i> Auto Rotation
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> <!-- end front panel -->
+                                                <div class="back">
+                                                    <div class="content">
+                                                        <div class="main">
+                                                            <h4 class="text-center">Features</h4>
+                                                            <ul>
+                                                                <li>Uses the requests library in conjunction with the json library to obtain all the data from the FPL API.</li>
+                                                                <li>Scrapes all the FPL data about every single player that has featured during the current English Premier League season</li>
+                                                                <li>Cleans, Filters and Saves all data in csv files using the csv python library</li>
+                                                            </ul>
+                                   
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer">
+                                                            <div class="social-links text-center">
+                                                                <a href="https://github.com/vaastav/Fantasy-Premier-League" class="github"><i class="fa fa-github fa-fw"></i></a>
+                                                            </div>
+                                                    </div>
+                                                </div> <!-- end back panel -->
+                                            </div> <!-- end card -->
+                                        </div> <!-- end card-container -->
                         </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-							<h4>Restaurant Quiz App</h4>
-                                <a href="projects/res_app.html">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
-                            </div>
+                        <div class="col-md-4">
+                                <div class="card-container">
+                                        <div class="card">
+                                            <div class="front">
+                                                <div class="cover">
+                                                    <img src="img/portfolio-5.jpg"/>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="main">
+                                                        <h3 class="name">Vancouver Fruit Gardens</h3>
+                                                        <p class="profession">Django, Python</p>
+                                                        <p class="text-center">A web application that shows all the fruits gardens in Vancouver and allows the user to save their favorite gardens as well as tweet about them.</p>
+                                                    </div>
+                                                    <div class="footer">
+                                                        <div class="rating">
+                                                            <i class="fa fa-mail-forward"></i> Auto Rotation
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end front panel -->
+                                            <div class="back">
+                                                <div class="content">
+                                                    <div class="main">
+                                                        <h4 class="text-center">Features</h4>
+                                                        <ul>
+                                                            <li>Shows a map of all gardens in Vancouver as well as all the types of fruit trees in each garden.</li>
+                                                            <li>Allows user to save their favorite gardens.</li>
+                                                            <li>Plots route from user's current location to a specific garden using Google Routes API</li>
+                                                            <li>Allows you to tweet about any app using twitter API.</li>
+                                                            <li>Gets reviews of every garden of twitter on click.</li>
+                                                            <li>App was deployed on heroku and can be found <a href="https://radiant-savannah-1336.herokuapp.com">here</a></li>
+                                                        </ul>
+                               
+                                                    </div>
+                                                </div>
+                                                <div class="footer">
+                                                        <div class="social-links text-center">
+                                                            <a href="https://github.com/cs310-2015ST1/Bananaz" class="github"><i class="fa fa-github fa-fw"></i></a>
+                                                        </div>
+                                                </div>
+                                            </div> <!-- end back panel -->
+                                        </div> <!-- end card -->
+                                    </div> <!-- end card-container -->
                         </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <h4>Monopoly World</h4>
-								<a href="projects/monopoly.html">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                </a>
-                            </div>
+                        <div class="col-md-4">
+                                <div class="card-container">
+                                        <div class="card">
+                                            <div class="front">
+                                                <div class="cover">
+                                                    <img src="img/portfolio-5.jpg"/>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="main">
+                                                        <h3 class="name">Event Manager</h3>
+                                                        <p class="profession">Android, Java</p>
+                                                        <p class="text-center">An andorid application aimed at making the jobs of event amnagers easier</p>
+                                                    </div>
+                                                    <div class="footer">
+                                                        <div class="rating">
+                                                            <i class="fa fa-mail-forward"></i> Auto Rotation
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end front panel -->
+                                            <div class="back">
+                                                <div class="content">
+                                                    <div class="main">
+                                                        <h4 class="text-center">Features</h4>
+                                                        <ul>
+                                                            <li>Uses firebase to provide consistent data across all platforms</li>
+                                                            <li>Developed at the inaugural nwHacks Hackathon in 2015</li>
+                                                        </ul>
+                               
+                                                    </div>
+                                                </div>
+                                                <div class="footer">
+                                                        <div class="social-links text-center">
+                                                            <a href="https://github.com/radu33/terminal_nwHacks" class="github"><i class="fa fa-github fa-fw"></i></a>
+                                                        </div>
+                                                </div>
+                                            </div> <!-- end back panel -->
+                                        </div> <!-- end card -->
+                                    </div> <!-- end card-container -->
                         </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-							<h4>Fantasy Manager</h4>
-                                <a href="projects/fan_man.html">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                </a>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                                <div class="card-container">
+                                        <div class="card">
+                                            <div class="front">
+                                                <div class="cover">
+                                                    <img src="img/portfolio-2.jpg"/>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="main">
+                                                        <h3 class="name">Restaurant Quiz App</h3>
+                                                        <p class="profession">Android, JAVA</p>
+                                                        <p class="text-center">The game basically requires the user to guess by clicking on the map where a randomly chosen restaurant is in the city with the ability to use upto a maximum of 3 hints</p>
+                                                    </div>
+                                                    <div class="footer">
+                                                        <div class="rating">
+                                                            <i class="fa fa-mail-forward"></i> Auto Rotation
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end front panel -->
+                                            <div class="back">
+                                                <div class="content">
+                                                    <div class="main">
+                                                        <h4 class="text-center">Features</h4>
+                                                        <ul>
+                                                            <li>Uses JSON parser to parse Yelp restuarant data</li>
+                                                            <li>Uses Google Maps API to place markers on the map where the user had clicked and to plot the total route between all the clicked points</li>
+                                                            <li>Uses Google Maps to overlay an arrow in the direction of the reaturant from the user's click in order to provide hints to the user.</li>
+                                                            <li>Class project for CPSC 210</li>
+                                                        </ul>
+                               
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end back panel -->
+                                        </div> <!-- end card -->
+                                    </div> <!-- end card-container -->
                         </div>
-						<div class="col-md-6">
-                            <div class="portfolio-item">
-							<h4>Fruit Gardens</h4>
-                                <a href="https://radiant-savannah-1336.herokuapp.com">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-5.jpg">
-                                </a>
-                            </div>
+                        <div class="col-md-4">
+                                <div class="card-container">
+                                        <div class="card">
+                                            <div class="front">
+                                                <div class="cover">
+                                                    <img src="img/portfolio-3.jpg"/>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="main">
+                                                        <h3 class="name">Monopoly World</h3>
+                                                        <p class="profession">C++</p>
+                                                        <p class="text-center">Textual Version of the popular board game Monopoly World</p>
+                                                    </div>
+                                                    <div class="footer">
+                                                        <div class="rating">
+                                                            <i class="fa fa-mail-forward"></i> Auto Rotation
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end front panel -->
+                                            <div class="back">
+                                                <div class="content">
+                                                    <div class="main">
+                                                        <h4 class="text-center">Features</h4>
+                                                        <ul>
+                                                            <li>A native Windows application</li>
+                                                            <li>Allows a maximum of 6 players to play the game at the same time</li>
+                                                            <li>Captures all aspects of the board game including but not limitied to buying properties, paying rent to other players, random dice rolls, random community chest cards</li>
+                                                            <li>My first ever CS project!</li>
+                                                        </ul>
+                               
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end back panel -->
+                                        </div> <!-- end card -->
+                                    </div> <!-- end card-container -->
                         </div>
-						<div class="col-md-6">
-                            <div class="portfolio-item">
-							<h4>Event Manager</h4>
-                                <a href="https://github.com/radu33/terminal_nwHacks">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-6.png">
-                                </a>
-                            </div>
+                        <div class="col-md-4">
+                                <div class="card-container">
+                                        <div class="card">
+                                            <div class="front">
+                                                <div class="cover">
+                                                    <img src="img/portfolio-1.jpg"/>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="main">
+                                                        <h3 class="name">Project JOKER</h3>
+                                                        <p class="profession">Microsoft KINECT + C#</p>
+                               
+                                                        <p class="text-center">Just One Kool Esoteric Responder a.k.a JOKER was intended to be a futuristic AI with the ability to take commands from the user and perform designated tasks just like JARVIS from The Iron Man.</p>
+                                                    </div>
+                                                    <div class="footer">
+                                                        <div class="rating">
+                                                            <i class="fa fa-mail-forward"></i> Auto Rotation
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end front panel -->
+                                            <div class="back">
+                                                <div class="content">
+                                                    <div class="main">
+                                                        <h4 class="text-center">Features</h4>
+                                                        <ul>
+                                                            <li>Could perform simple math operations on voice commands.</li>
+                                                            <li>Open basic windows applications on voice commands.</li>
+                                                            <li>Pong game using gesture recognition</li>
+                                                        </ul>
+                               
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end back panel -->
+                                        </div> <!-- end card -->
+                                    </div> <!-- end card-container -->
                         </div>
                     </div>
                 </div>
