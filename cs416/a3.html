@@ -1,0 +1,421 @@
+<html>
+<head>
+<style>
+a:link {color: #660099}     /* unvisited link; old: #660099 */
+a:visited {color: #660099}  /* visited link; old: #660099 */
+a:hover {color: red}     /* mouse over link; old: #088A08 */
+a:active {color: red}    /* selected link */
+
+a   { text-decoration:none;  }
+
+body { background-color: white; }
+
+td {
+    	width: 100%;
+	padding-bottom: 40px;
+}
+
+ul.smallfont {
+	font: 15px Arial;
+}
+
+#code {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #006400;
+    padding:0px;
+}
+
+
+#main {
+        margin-left: auto;
+	margin-right: auto;
+	font: 16px Arial;
+	font-stretch: 10%;
+	width: 65%;
+	text-align:left;
+	margin-top: 15px;
+	padding: 15px 15px 15px;
+	cellpadding: 15px;
+	border: 1px solid;
+        border-color: #006400;
+	rules: none;
+	frame: box;
+	background-color: white;
+}
+
+#schedule {
+        margin-left: auto;
+	margin-right: auto;
+	font: 17px Arial;
+	font-stretch: 10%;
+	width: 100%;
+	text-align:left;
+	margin-top: 15px;
+/*
+        padding: 15px 15px 15px;
+	cellpadding: 15px; 
+	border: 1px solid;
+        border-color: #006400;
+	rules: none;
+	frame: box; 
+*/
+	background-color: white; 
+        border: 0;
+        cellspacing:0;
+        border-spacing: 0;
+}
+
+td.tdfirst {
+    width: 10%;
+    padding: 15px;
+    text-align:center;
+    font: 15px Arial;
+}
+
+td.tdsecond {
+    width: 90%;
+    padding: 15px;
+    border-left: 2px solid #006400;
+}
+
+h4 {
+    padding-top: 15px;
+}
+
+
+td.tdthird {
+    font: 13px Arial;
+    width: 19%;
+    padding: 15px;
+    border-left: 2px solid #006400;
+}
+
+#schedule tr:nth-child(odd) {
+    background-color: #D8FFDC;
+}
+
+/* Apply padding to td elements that are direct children of the tr element. */
+tr.spaceUnder > td
+{
+  padding-bottom: 2em;
+}
+
+p.quote {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+
+div.hbar {
+        clear: both;
+	margin-top: -1.1em;
+	border-top: solid;
+	border-top-width:2px;
+	padding-top: 0em;
+}
+
+div.hbarshort {
+        float:left;
+	margin-top: -1.1em;
+	border-top: solid;
+	border-top-width:1px;
+	padding-top: 0em;
+        width: 45%;
+}
+
+ul.nobullets {
+    list-style-type: none;
+}
+
+#footer {
+	font: 12px Arial;
+	font-stretch: 10%;
+	color: gray;
+}
+
+#navbar {
+  margin: 0em;
+}
+
+#navbar ul {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+/*  width: 100%; */
+  width: 100%; 
+  font: 13px Helvetica;
+  letter-spacing:1.8px;
+  text-transform:uppercase; 
+  font-stretch: 10%;
+}
+
+#navbar a:link {color: black}
+#navbar a:visited {color: black}
+#navbar a:hover {color: black}
+#navbar a:active {color: black}
+
+#navbar > ul > li {
+  margin: 0.2em 0.5em;
+  padding: .5em;
+  display: inline-block;
+  background-color: green;   /* fallback */
+  background-color: OliveDrab;
+  border-style: none;
+  border-radius: 5pt;
+  color: black;
+}
+#navbar > ul > li:hover {
+  background-color: orange;
+  color: black;   
+}
+#navbar > ul > li.active {
+  background-color: orange;
+}
+
+u {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<title>Assignment 3</title>
+
+<table id="main">
+    <tr>
+        <td style="padding-bottom: 20px">
+			<h2><a href="http://www.cs.ubc.ca/~bestchai/teaching/cs416_2018w1">416</a> Distributed Systems: Assignment 3</h2>
+			<h3>Due: XX at 11:59pm</h3>
+			<p style="color:gray"><small>Fall 2018</small></p>
+		</td>
+	</tr>
+<!-- -------------------------------------------------------------------------->
+	<tr>
+		<td>
+			<p>In this assignment, you will be implementing a web cache. A web 
+			cache temporarily stores frequently accessed static content to reduce
+			server lag.
+			<br><br>
+			You will deploy and test your web cache on the <a href="https://portal.azure.com/"> Azure cloud</a>.
+			</p>
+			
+			<h4>Background</h4>
+			<div class="hbarshort"></div>
+			
+			<p>
+			Internet users with similar interests often access and download the same content
+			over and over again. Without a webcache, every time a user requests some content,
+			the response must come all the way from the origin server hosting the content. If
+			a lot of users are accessing the same content at the same time, the response time
+			may increase and cause an overload on the server.
+			
+			A web cache handles requests for popular content that would otherwise be directed
+			to the origin server thereby preventing a server overload as well as decreasing the
+			response time for the users to view their desired content.
+			
+			<br>Here is a look at how a webcache works in practice.<br>
+			
+			<img src="web-cache-2.png"/>
+			
+			</p>
+			
+			<h4>Overview</h4>
+			<div class="hbarshort"></div>
+			
+			<p>
+			The focus of this assignment is to design a web cache that caches and serves static
+			web content. The Web Cache must be able to serve multiple clients concurrently
+			and must be persistent and able to survive crashes or restarts.
+			</p>
+			
+			<h4>High-level protocol description</h4>
+			<div class="hbarshort"></div>
+
+			<p>
+			<b>Responding to Requests.</b> The Webcache receives a GET request from a client to get an html page and checks for the page in cache.
+			If the page is in cache then it checks if it has expired. If the page is not expired then it returns the page.
+			If the page is expired or not in cache, it requests the new page and resources, updates all the links in the page 
+			to point to the cache resource links, adds(or updates) the page to the cache and returns the page. 
+			A html page with original links would never be returned and only html pages with cache links will be returned.
+			To obtain the resources associated with a html page, the webproxy must parse through the html page and 
+			figure out all the resources it needs to host to update the links correctly in the html page returned back to the client.
+			You may use the <a href="https://godoc.org/golang.org/x/net/html">HTML library</a> for parsing the pages.
+			</p>
+
+			<p>
+			<b>Persistence.</b>In the case of restarts or crashes, the webcache must be able to build the cache completely from disk.
+			This requires that the pages in the cache must be written to disk.
+			</p>
+			
+			<p>
+			<b>Cache Eviction and Replacement.</b> If the cache is full and a new page is to be added,
+			a page is chosen to be replaced according to the cache replacement policy.
+			Must have support for the following cache replacement policies :
+			<ul>
+				<li>LRU (Least Recently Used)
+				<li>LFU (Least Frequently Used)
+				<li>LIFO (Last In First Out)
+			</ul>
+			</p>
+			
+			<p>
+			The following diagram illustrates the overall state of the system
+			<br><br>
+				<img style="height:50%; width:75%"src="a3.svg"/>
+			</p>
+			
+			<h4>WebCache API</h4>
+			<div class="hbarshort"></div>
+			
+			<p>
+			Your web cache must provide the following API as RPC calls :
+			
+			<ul>
+				<li><tt>html_page_as_bytes, error</tt> &#8592;  <b>GetHtmlPage</b>(<tt>url</tt>)
+				<ul>
+					<li>Receives a url and tries to obtain the html page and resources associated with the link.
+					Updates the page so that all the resource links are cache links and not the original links.
+					</li>
+					<li>Returns an error if unable to resolve the url and obtain an html page.</li>
+				</ul>
+				</li>
+			</ul>
+			<b>Note : </b> API calls provided <b>ARE NOT</b> in Go's native RPC format and they must be converted into proper RPC format.
+			</p>
+			
+            <h4>Client API</h4>
+            <div class="hbarshort"></div>
+            <p>The client requests a webpage from the web cache and receives an
+               html page page that contains all the updated links inside it for
+               the scripts, css files, and images.
+               
+               The <tt>IP:port</tt> of the web cache will be given as command
+               line arguments. It is safe to assume that the <tt>IP:port</tt> is
+               correctly formatted and actually points to the web cache.
+               
+               The client will use the <a href="https://golang.org/pkg/net/rpc/">
+               golang RPC package</a> to request a webpage from the web cache.
+               It is reccomended that you use TCP on the client side to avoid
+               having to handle failures. When the client receives the response
+               from the web cache, it should execute a
+               <a href="https://github.com/pkg/browser"> browser command</a> to
+               show the page.
+            </p>
+			
+			<h4>Azure Deployment</h4>
+			<div class="hbarshort"></div>
+			
+			<p>
+			The Azure cloud is composed of several data-centers,
+			<a href="https://azure.microsoft.com/en-ca/regions/">located
+			world-wide</a>. Each data center hosts many thousands of machines that
+			can be used (i.e., rented) for a price. In this project you may use the Azure cloud to deploy and test your solution in the wide area.
+			</p>
+
+			<p>
+			Although you will test and deploy your system on Azure, it will have
+			nothing Azure-specific about it, e.g., it should be possible to run
+			your system on the CS ugrad servers without any code modifications.
+			</p>
+
+			<h4>Using Azure: <font color="red">stop VMs when not using</font></h4>
+			<div class="hbarshort"></div>
+
+			<p>
+			We prepared
+			a <a href="https://docs.google.com/presentation/d/176xnp2K_b7WGVSm1H0zydM1XwbLxrrvQConlaJ9J1xw/edit?usp=sharing">google
+			slides presentation</a> covering the basic workflow of getting a VM
+			running on Azure for this/future assignments. To setup the Go
+			environment in a VM you can use
+			the <a href="azureinstall.sh">azureinstall.sh</a> script.
+			</p>
+
+			<p>
+			The default Azure subscription comes with
+			a <a href="http://www.purplefrogsystems.com/paul/2016/06/azure-virual-machine-cpu-cores-quota/">limitation
+			of 20 cores per region</a>. For this assignment you should not need
+			cores above this limit.
+			</p>
+
+			<p>
+			Use <a href="https://www.microsoftazuresponsorships.com/Manage">this site</a> to check your account balance.
+			</p>
+
+			<p>Access information posted to <a href="">piazza</a>.</p>
+
+			<p>
+			A key detail is that each second that your VM is running it is draining your
+			balance (yikes!). You should <b>STOP your VMs when you are not using
+			them.</b> It's up to you to police your own account.
+			</p>
+			
+			<h4>Implementation Requirements</h4>
+			<div class="hbarshort"></div>
+			
+			<p>
+			<ul>
+				<li> The webcache code must be runnable on Azure Ubuntu machines configured with Go X.X.X</li>
+				<li> Your solution can only use <a href="https://golang.org/pkg/#stdlib">standard library</a> Go packages except
+				for the browser library mentioned below.
+				<li> You must use the <a href="https://github.com/pkg/browser">Browser library</a> for executing browser commands.
+				<li> You must use the <a href="https://godoc.org/golang.org/x/net/html">HTML library</a> in your webcache.
+				<li> Your solution code must be Gofmt'd using gofmt</li>
+			</ul>
+			</p>
+
+			<h4>Solution Spec</h4>
+			<div class="hbarshort"></div>
+			
+			<p>
+			Write a go program called webcache.go that must behave according to the description above.
+			</p>
+			
+			<p>
+			WebCache's command line usage
+			</p>
+			
+			<tt id="code">
+			go run web-cache.go [ip:port] [replacement_policy] [cache_size]
+			</tt>
+			
+			<p>
+				<ul>
+					<li>[ip:port] : The IP address and the port at which the web-cache will be running.</li>
+					<li>[replacement_policy] : The replacement policy that the web cache follows during eviction. </li>
+					<li>[cache_size] : The number of html pages the cache can hold at a time (excluding resources for the page). </li>
+				</ul>
+			</p>
+			
+			<h4>Grading Scheme</h4>
+			<div class="hbarshort"></div>
+			
+			<p>
+			We will follow a Demo style grading scheme.
+			Exact breakdown TBD.
+			</p>
+			
+			<h4>Extra Credit</h4>
+			<div class="hbarshort"></div>
+			
+			<p>
+				This project is extensible with the following extra credits:
+				<ul>
+					<li>EC1 [1% of final mark] Implement a rotation policy with the disk that allows the web cache to cache more links
+						than the size of the cache. The web cache API will be updated as follows : 
+						<ul>
+							<li>If a link is not in the cache then the web cache checks if the link is stored on the disk. If it is and	
+							the link has not expired then the webcache returns the link the client.</li>
+							<li>When evicting links from the cache, the links must now be stored on the disk instead of just being thrown away.</li>
+						</ul>
+						Remember that your web cache should still be persistent and should still be able to rebuild after a restart or a crash.
+					</li>
+				</ul>
+			</p>
+			
+        </td>
+    </tr>
+</table>
+</body>
+</html>
