@@ -217,7 +217,7 @@ u {
 			
 			<br>Here is a look at how a webcache works in practice.<br>
 			
-			<img src="web-cache-2.png"/>
+			<img style="height:50%; width:75%"src="a2-infra.svg"/>
 			
 			</p>
 			
@@ -225,7 +225,7 @@ u {
 			<div class="hbarshort"></div>
 			
 			<p>
-			The focus of this assignment is to design a web cache that caches and serves static
+			In this assignment, you will design a web cache that caches and serves static
 			web content. The Web Cache must be able to serve multiple clients concurrently
 			and must be persistent and able to survive crashes or restarts.
 			</p>
@@ -239,14 +239,25 @@ u {
 			If the page is expired or not in cache, it requests the new page and resources, updates all the links in the page 
 			to point to the cache resource links, adds(or updates) the page to the cache and returns the page. 
 			A html page with original links would never be returned and only html pages with cache links will be returned.
-			To obtain the resources associated with a html page, the webproxy must parse through the html page and 
+			You don't have to cache the header of the responses you receive.
+			</p>
+			<p>
+			<b>HTML Parsing</b>To obtain the resources associated with a html page, the webproxy must parse through the html page and 
 			figure out all the resources it needs to host to update the links correctly in the html page returned back to the client.
 			You may use the <a href="https://godoc.org/golang.org/x/net/html">HTML library</a> for parsing the pages.
+			<br> You need to parse and obtain resources for the following HTML tags:
+			<ul>
+				<li>img</li>
+				<li>script</li>
+				<li>style</li>
+				<li>link</li>
+			</ul>
 			</p>
 
 			<p>
 			<b>Persistence.</b>In the case of restarts or crashes, the webcache must be able to build the cache completely from disk.
-			This requires that the pages in the cache must be written to disk.
+			This requires that the pages in the cache must be written to disk. The updated pages must be written to the disk before they
+			are sent back to the user as responses.
 			</p>
 			
 			<p>
@@ -258,12 +269,6 @@ u {
 				<li>LFU (Least Frequently Used)
 				<li>LIFO (Last In First Out)
 			</ul>
-			</p>
-			
-			<p>
-			The following diagram illustrates the overall state of the system
-			<br><br>
-				<img style="height:50%; width:75%"src="a3.svg"/>
 			</p>
 			
 			<h4>WebCache API</h4>
@@ -284,6 +289,10 @@ u {
 			</ul>
 			<b>Note : </b> API calls provided <b>ARE NOT</b> in Go's native RPC format and they must be converted into proper RPC format.
 			</p>
+            
+            <p>Here is what the protocol will look like in terms of messages:<br>
+            <img src="a2-protocol2.svg"/>
+            </p>
 			
             <h4>Client API</h4>
             <div class="hbarshort"></div>
@@ -377,7 +386,7 @@ u {
 			</p>
 			
 			<tt id="code">
-			go run web-cache.go [ip:port] [replacement_policy] [cache_size]
+			go run web-cache.go [ip:port] [replacement_policy] [cache_size] [expiration_time]
 			</tt>
 			
 			<p>
@@ -385,6 +394,7 @@ u {
 					<li>[ip:port] : The IP address and the port at which the web-cache will be running.</li>
 					<li>[replacement_policy] : The replacement policy that the web cache follows during eviction. </li>
 					<li>[cache_size] : The number of html pages the cache can hold at a time (excluding resources for the page). </li>
+					<li>[expiration_time] : The time period after which a page in the cache is considered to be expired.</li>
 				</ul>
 			</p>
 			
@@ -408,8 +418,27 @@ u {
 							<li>If a link is not in the cache then the web cache checks if the link is stored on the disk. If it is and	
 							the link has not expired then the webcache returns the link the client.</li>
 							<li>When evicting links from the cache, the links must now be stored on the disk instead of just being thrown away.</li>
+							<li>Your disk is also limited in size. If the cache is full and the disk is full then you need to follow
+								the eviction policy to remove something from the disk to fit in the new page.
+							</li>
 						</ul>
 						Remember that your web cache should still be persistent and should still be able to rebuild after a restart or a crash.
+						<br> To obtain full credit you must add an additional command line argument <tt>[disk-size]</tt> which represents the maximum disk size.
+					</li>
+					<li>EC2 [1% of final mark] Modify the web-cache to be consistent with the cache-control directives in the HTTP header field.
+						<ul>
+							<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">More Information</a> on 
+							cache-control directives in the header.</li>
+							<li>You only need to support the following cache-control directives:
+									<ul>
+										<li><b>public : </b> Indicates that the response may be cached by any cache.</li>
+										<li><b>no-store : </b>
+											The cache should not store anything about the client request or server response.</li>
+									</ul>
+							</li>
+						</ul>
+					</li>
+					<li>EC3 [1% of final mark] Write a javascript file that estimates if a resource is in the cache or not.
 					</li>
 				</ul>
 			</p>
