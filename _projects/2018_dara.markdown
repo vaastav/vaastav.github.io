@@ -1,0 +1,13 @@
+---
+layout: page
+title: Dara
+description: Model checker for distributed systems
+img: /assets/img/dara.jpg
+research: true
+---
+
+Dara is a model checker for Distributed Systems written in Go which combines the speed
+of a traditional model checker with the realism of an implementation
+level model checker to find Heisenbugs.
+
+More info at <a href="https://github.com/DARA-Project" class="github"><i class="fab fa-github fa-fw fa-2x"></i></a>
