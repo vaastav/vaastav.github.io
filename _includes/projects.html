@@ -1,14 +1,14 @@
-<div id="projects-personal" style="dispay: inline-block;">
+<div id="projects-personal" style="display: inline-block;">
 
 <h3> Personal/Class Projects </h3>
 
 {% assign projects = site.projects | reverse %}
 {% for project in projects %}
 
-{% if project.personal %}
+{% if project.personal && project.old != true %}
 <div class="project">
     <div class="thumbnail">
-        <a href="{{ project.url | prepend: site.baseurl | prepend: site.url }}" target="_blank">
+        <a href="{{ project.url | prepend: site.baseurl | prepend: site.url }}">
         {% if project.img %}
         <img class="thumbnail" src="{{ project.img | prepend: site.baseurl | prepend: site.url }}"/>
         {% else %}
