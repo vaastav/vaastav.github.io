@@ -2,26 +2,31 @@
     box-sizing: border-box;
     float: left;
     height: 250px;
-    padding: 10px;
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
     vertical-align: middle;
-    width: 33.33%;
+    width: 250px;
+    object-fit: contain;
 
     .thumbnail {
-        overflow: hidden;
-        height: 200px;
+ //       overflow: hidden;
+        height: 100%;
         width: 100%;
 
         img {
-            height: auto;
+            height: 100%;
             position: relative;
-                left: -25%;
-                top: -5%;
-            width: 500px;
+                // left: -25%;
+                // top: -5%;
+            width: 100%;
+ //           object-fit: contain;
         }
 
         a {
             float: left;
-            height: 230px;
+            height: 250px;
             position: relative;
             width: 100%;
 
