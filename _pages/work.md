@@ -5,6 +5,18 @@ title: Work
 description: Work History
 ---
 
+### MPI-SWS
+
+<details><summary>Details</summary>
+
+<h4> Research Intern, May 2019 - Aug 2019 </h4>
+
+<ul>
+<li> Working under the supervision of Dr. Jonathan Mace </li>
+</ul>
+
+</details>
+
 ### NVIDIA
 
 <details><summary>Details</summary>
