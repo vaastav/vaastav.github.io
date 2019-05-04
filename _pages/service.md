@@ -7,6 +7,10 @@ description:
 
 ### Academic Service
 
+#### Program Committee Member
+
++ CS-Can Student Symposium 2019
+
 #### Sub-Reviewer
 
 + Dr. Ivan Beschastnikh, JSE
