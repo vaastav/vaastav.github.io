@@ -21,6 +21,10 @@ description:
 + [Motionless](/assets/files/writing/Motionless.pdf)
 + [The Leap](/assets/files/writing/TheLeap.pdf)
 
+#### Articles
+
++ [Who to get in to replace Richarlison?](http://sportsgrape.com/2018/08/fpl-replacements-richarlison/), Aug 2018, sportsgrape.com
+
 ### Art
 
 #### Mondrian Art Generator
