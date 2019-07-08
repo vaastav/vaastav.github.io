@@ -13,6 +13,7 @@ description:
 
 #### Sub-Reviewer
 
++ Dr. Ivan Beschastnikh, Elsevier IST
 + Dr. Ivan Beschastnikh, JSE
 + William Anthony Mason, SIGCSE'19
 + Dr. Ivan Beschastnikh, ESEC/FSE'18 NIER
@@ -20,8 +21,13 @@ description:
 
 ### Volunteering
 
++ Grad Rep, UBC CS Faculty Recruiting Committee, May'19 - Apr'20
++ Grad Rep, UBC CS Program Experience Committee, May'19 - Apr'20
++ Grad Rep, UBC CS Classroom Operations Committee, May'19 - Apr'20
++ Sports Representative, UBC CS Grad Students Association, May'19 - Apr'20
 + Software Developer, UX Lab, Jan'18 - Apr'18
 + Undergrad Rep, UBC CS Program Experience Committee, Sep'16 - Dec'16
++ Member, [UBC iGEM 2016](http://2016.igem.org/Team:British_Columbia), Jan'16 - Oct'16
 + Mentor, Girls Learning Code Summer Camp, Ladies Learning Code, Jun'15 - Aug'15
 + Volunteer, GirlSmarts4Tech, Nov'14 - Apr'15
 + Undergrad Rep, UBC CS Program Experience Committee, Sep'14 - Aug'15
