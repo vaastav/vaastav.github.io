@@ -5,7 +5,7 @@
 {% assign projects = site.projects | reverse %}
 {% for project in projects %}
 
-{% if project.personal && project.old != true && project.data != true %}
+{% if project.personal and project.old != true and project.data != true %}
 <div class="project">
     <div class="thumbnail">
         <a href="{{ project.url | prepend: site.baseurl | prepend: site.url }}">

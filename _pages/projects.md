@@ -9,6 +9,4 @@ description: A comprehensive list of my projects
 
 {% include projects.html %}
 
-{% include data_projects.html %}
-
 {% include old_projects.html %}
