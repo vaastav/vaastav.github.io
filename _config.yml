@@ -34,7 +34,7 @@ blog_name: The Coffee Corner
 blog_description: A tech, lifestyle, and sports blog
 
 # Pagination
-paginate: 4
+paginate: 10
 permalink: /blog/:year/:title/
 paginate_path: /blog/page:num/
 
