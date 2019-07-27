@@ -7,6 +7,7 @@ keywords:
   - 3dpdf
 tags:
   - tech
+excerpt: A How-To Guide for embedding U3D ojects in a PDF file using LaTeX.
 ---
 
 This document describes all the things needed to embed U3D objects into a PDF file in order to generate a 3D PDF.

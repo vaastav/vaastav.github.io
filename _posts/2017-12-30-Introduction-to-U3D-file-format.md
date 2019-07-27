@@ -7,6 +7,7 @@ keywords:
   - 3dpdf
 tags:
   - tech
+excerpt: Introduction to the U3D file format with annotated examples.
 ---
 
 This post will serve as a simple introduction to the U3D file format specificaton for any person who needs to write an output or input stream for U3D objects or is genuinely interested in 3D formats. The goal of this post is to provide the details, DOs and DONTs for everything required to write a U3D writer.

@@ -7,6 +7,7 @@ keywords:
 tags:
   - tech
   - research
+excerpt: This post summarizes the results of the experiments in the COST paper that I reproduced for my CPSC 508 class assignment.
 ---
 
 This post summarizes the results of the experiments in the [COST paper](https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf)
