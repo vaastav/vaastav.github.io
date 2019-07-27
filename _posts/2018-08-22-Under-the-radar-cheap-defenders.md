@@ -2,6 +2,14 @@
 layout: post
 title: "Under the radar cheap defenders"
 date: 2018-08-22
+keywords:
+  - fpl
+  - analysis
+  - cheap
+  - defenders
+  - radar
+tags:
+  - fpl
 ---
 
 It is a new season but its the same old problems that people need solutions to. With a lot of defenders starting the season with a bang, and a lot of mid and high priced midfielders having a stinker, fantasy premier league managers have been forced into making a tactical shift into deploying a 4-3-3 starting formation.

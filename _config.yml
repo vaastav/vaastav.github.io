@@ -87,12 +87,15 @@ highlighter: pygments
 include: ['_pages']
 exclude: [vendor]
 
+plugins_dir: ./_plugins
+
 # Plug-ins
 plugins:
     - jekyll-email-protect
     - jekyll-paginate
     - jekyll/scholar
     - jemoji
+    - tag_generator
 
 # Jekyll-Scholar
 scholar:

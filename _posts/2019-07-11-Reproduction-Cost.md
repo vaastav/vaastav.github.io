@@ -2,6 +2,11 @@
 layout: post
 title: Reproduction of "Scalability! But at what COST!"
 date: 2019-07-11
+keywords:
+  - COST reproduction
+tags:
+  - tech
+  - research
 ---
 
 This post summarizes the results of the experiments in the [COST paper](https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf)
