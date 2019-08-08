@@ -103,7 +103,7 @@ plugins:
 # Jekyll-Scholar
 scholar:
 
-  last_name: Einstein
+  last_name: Anand
 
   style: apa
   locale: en
