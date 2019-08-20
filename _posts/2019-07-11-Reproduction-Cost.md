@@ -197,6 +197,10 @@ The results were as follows for the twitter dataset :
 | union_find | vertex  |   34.34s  |  24.2s |  26.56s |   21.43s |
 | union_find | hilbert |   12.58s  |   5.9s |   7.14s |    6.69s |
 
+The author was very kind to give me a shoutout on Twitter(No pun intended) :
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">That third column contains the measurements from <a href="https://twitter.com/vaastav05?ref_src=twsrc%5Etfw">@vaastav05</a>, who went out to see if the COST measurements could be reproduced (Science!) and reached the surprising conclusion that the measurements have *improved* in the past four years.<a href="https://t.co/QQelcj0tAm">https://t.co/QQelcj0tAm</a></p>&mdash; Frank McSherry (@frankmcsherry) <a href="https://twitter.com/frankmcsherry/status/1139999194477932545?ref_src=twsrc%5Etfw">June 15, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
 ## Bugs Found
 
 I found a couple of issues while preprocessing the graphs. 
