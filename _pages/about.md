@@ -24,3 +24,4 @@ My hobbies include watching football, Formula 1, and learning new languages.
 I also like to cook in my free time and I do enjoy writing and reading poetry from time to time.
 
 Here is my full academic [cv](/assets/files/cv.pdf){:target="\_blank"} and here is my [resume](/assets/files/resume.pdf){:target="\_blank"}.
+

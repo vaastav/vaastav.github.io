@@ -12,6 +12,7 @@ Assistantship roles.
 
 ### Teaching Assistantship
 
++ CPSC 508 : Graduate Operating Systems, UBC, Sep'19 - Dec'19
 + CPSC 416 : Distribtued Systems, UBC, Sep'18 - Dec'18
 + Algorithms and the Internet, Vancouver Summer Program, Jul'18 - Aug'18
 + CPSC 210 : Software Construction, UBC, Jan'18 - Apr'18
