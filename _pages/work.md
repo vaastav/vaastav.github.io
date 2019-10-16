@@ -12,7 +12,12 @@ description: Work History
 <h4> Research Intern, May 2019 - Aug 2019 </h4>
 
 <ul>
-<li> Working under the supervision of Dr. Jonathan Mace </li>
+<li> Worked under the supervision of Dr. Jonathan Mace </li>
+<li> Developed Sifter, a tool for sampling unique distributed traces, without feature engineering.</li>
+<li> Designed, developed, and implemented Cobbler, a tool for automatically instrumenting distributed systems source code for producing distributed traces.</li>
+<li> Implemented XTrace tracing library for <a href="https://github.com/JonathanMace/xtrace-cpp">C++ and Lua</a></li>
+<li> Implemented a <a href="https://github.com/MPI-SWS/xtrace-shiviz">coverter</a> for converting XTrace traces to ShiViz compatible logs.</li>
+<li> Instrumented <a href="https://github.com/JonathanMace/DeathStarBench">DeathStarBench</a>, a microservices benchmark suite, to produce X-Trace compatible traces.</li>
 </ul>
 
 </details>
@@ -65,6 +70,7 @@ description: Work History
 
 <ul>
 <li>Graduate Research Assistant, Computer Science Department, Jan 2019 - current</li>
+<li>Graduate Teaching Assistant, Computer Science Department, Sep 2019 - current</li>
 <li>Graduate Teaching Assistant, Computer Science Department, Sep 2018 - Dec 2018</li>
 <li>Undergraduate Researcher, Computer Science Department, May 2018 - Aug 2018</li>
 <li>Research Assistant, Interdisciplinary Speech Research Lab, Nov 2017 - Apr 2018</li>
