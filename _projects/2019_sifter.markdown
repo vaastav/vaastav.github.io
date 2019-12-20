@@ -2,6 +2,7 @@
 layout: page
 title: Sifter
 description: Encoding-based sampling for distributed Tracing
+img: /assets/img/sifter.png
 research: true
 ---
 
