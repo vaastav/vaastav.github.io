@@ -104,6 +104,7 @@ plugins:
 scholar:
 
   last_name: Anand
+  first_name: Vaastav
 
   style: apa
   locale: en

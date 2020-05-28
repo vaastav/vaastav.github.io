@@ -20,11 +20,15 @@
           {% if author.last == site.scholar.last_name %}
             <em>{{author.first}} {{author.last}}</em>
           {% else %}
-            {{author.first}} {{author.last}}
+            {% if author.first == site.scholar.first_name %}
+              <em>{{author.first}} {{author.last}}</em>
+            {% else %}
+              {{author.first}} {{author.last}}
+            {% endif %}
           {% endif %}
         {% else %}
           {% unless forloop.last %}
-            {% if author.last == site.scholar.last_name %}
+            {% if author.last == site.scholar.last_name or author.first == site.scholar.first_name %}
               <em>{{author.first}} {{author.last}}</em>,
             {% else %}
               {% if site.data.coauthors[author.last] %}

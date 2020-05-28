@@ -18,3 +18,5 @@ captured by this model. We have implemented Sifter, integrated it with several o
 with traces from a range of open-source and production distributed systems. Our evaluation shows that Sifter 
 effectively biases towards anomalous and outlier executions, is robust to noisy and heterogeneous traces, is efficient and
 scalable, and adapts to changes in workloads over time.
+
+Full paper is available [here](/assets/pdf/lascasas2019sifter.pdf).
