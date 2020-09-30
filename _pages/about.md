@@ -2,7 +2,7 @@
 layout: about
 permalink: /
 title: <strong>Vaastav</strong> Anand
-description: M.Sc. Student, University of British Columbia
+description: PhD Student, MPI-SWS
 
 profile:
   align: right
