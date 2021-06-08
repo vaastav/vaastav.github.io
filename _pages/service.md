@@ -20,6 +20,10 @@ description:
 + Dr. Ivan Beschastnikh, ESEC/FSE'18 NIER
 + Dr. Ivan Beschastnikh, ESEM'18
 
+### Events
+
++ Co-Host and co-organizer of [Systems Trivia Night](https://systemstrivia.github.io/) at HotOS'21 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti) and [Jonathan Mace](https://people.mpi-sws.org/~jcmace).
+
 ### Volunteering
 
 + Grad Rep, UBC CS Faculty Recruiting Committee, May'19 - Apr'20

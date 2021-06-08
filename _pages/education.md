@@ -7,9 +7,13 @@ description: Full Education and Awards history
 awards: true
 ---
 
+### Max Planck Institute for Software-Systems
+
++ PhD in Computer Science, Sept 2020 - current
+
 ### University of British Columbia
 
-+ Master of Science, Sept 2018 - current
++ Master of Science, Sept 2018 - Aug 2020
 + Bachelor of Science, Sept 2013 - May 2018
 
 ### Vancouver Institute of Visual Analytics
