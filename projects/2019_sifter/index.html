@@ -8,7 +8,7 @@
   
   
 
-  <title>Vaastav Anand</title>
+  <title>Vaastav Anand | Sifter</title>
   <meta name="description" content="Vaastav Anand is a Doctoral Researcher at MPI-SWS working under the supervision of Herr Dr. Jonathan Mace.
 ">
 
@@ -16,7 +16,7 @@
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
 
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/blog/">
+  <link rel="canonical" href="/projects/2019_sifter/">
 </head>
 
 
@@ -105,75 +105,38 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="header-bar">
-  <h1>The Coffee Corner</h1>
-  <h2>A tech, lifestyle, and sports blog</h2>
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Sifter</h1>
+    <h5 class="post-description">Encoding-based sampling for distributed Tracing</h5>
+  </header>
+
+  <article class="post-content Sifter clearfix">
+    <p>Distributed tracing is a core component of cloud and datacenter systems, and provides visibility into their end-to-end
+runtime behavior. To reduce computational and storage overheads, most tracing frameworks do not keep all traces,
+but sample them uniformly at random. While effective at reducing overheads, uniform random sampling inevitably
+captures redundant, common-case execution traces, which are less useful for analysis and troubleshooting tasks. In
+this work we present Sifter, a general-purpose framework for biased trace sampling. Sifter captures qualitatively more
+diverse traces, by weighting sampling decisions towards edge-case code paths, infrequent request types, and 
+anomalous events. Sifter does so by using the incoming stream of traces to build an unbiased low-dimensional model that
+approximates the system’s common-case behavior. Sifter then biases sampling decisions towards traces that are poorly
+captured by this model. We have implemented Sifter, integrated it with several open-source tracing systems, and evaluate
+with traces from a range of open-source and production distributed systems. Our evaluation shows that Sifter 
+effectively biases towards anomalous and outlier executions, is robust to noisy and heterogeneous traces, is efficient and
+scalable, and adapts to changes in workloads over time.</p>
+
+<p>Full paper is available <a href="/assets/pdf/lascasas2019sifter.pdf">here</a>.</p>
+
+  </article>
+
+  
+
+  
+
+  
+
 </div>
-
-
-<ul class="post-list">
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2022/A-Researchers-Guide-To-Tracing/">A researcher's guide to tracing</a></h2>
-      <p class="post-meta">January 31, 2022</p>
-      <p></p>
-      <p>
-          
-          <a class="post" href="/tags/tech">#tech</a>
-          
-      </p>
-    </li>
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2019/Reproduction-Cost/">Reproduction of "Scalability! But at what COST!"</a></h2>
-      <p class="post-meta">July 11, 2019</p>
-      <p></p>
-      <p>
-          
-          <a class="post" href="/tags/tech">#tech</a>, 
-          
-          <a class="post" href="/tags/research">#research</a>
-          
-      </p>
-    </li>
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2018/Under-the-radar-cheap-defenders/">Under the radar cheap defenders</a></h2>
-      <p class="post-meta">August 22, 2018</p>
-      <p></p>
-      <p>
-          
-          <a class="post" href="/tags/fpl">#fpl</a>
-          
-      </p>
-    </li>
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2017/Introduction-to-U3D-file-format/">A Beginner's Introduction to U3D file format</a></h2>
-      <p class="post-meta">December 30, 2017</p>
-      <p></p>
-      <p>
-          
-          <a class="post" href="/tags/tech">#tech</a>
-          
-      </p>
-    </li>
-  
-    <li>
-      <h2><a class="post-title" href="/blog/2017/Generating-3D-PDFs-with-U3D/">Embedding 3D objects in PDFs using U3D files</a></h2>
-      <p class="post-meta">December 29, 2017</p>
-      <p></p>
-      <p>
-          
-          <a class="post" href="/tags/tech">#tech</a>
-          
-      </p>
-    </li>
-  
-</ul>
-
-
-
 
       </div>
     </div>
