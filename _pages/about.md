@@ -14,9 +14,9 @@ news: true
 social: true
 ---
 
-I am a Doctoral Researcher at [Max Planck Institute for Software Systems (MPI-SWS)](https://www.mpi-sws.org/) where I work under the supervision of [Herr. Dr. Jonathan Mace](https://people.mpi-sws.org/~jcmace/), [Dr. Antoine Kaufmann](https://people.mpi-sws.org/~antoinek/), and [Dr. Deepak Garg](https://people.mpi-sws.org/~dg/).
+I am a Doctoral Researcher at [Max Planck Institute for Software Systems (MPI-SWS)](https://www.mpi-sws.org/) where I work under the supervision of [Dr. Antoine Kaufmann](https://people.mpi-sws.org/~antoinek/) and [Dr. Deepak Garg](https://people.mpi-sws.org/~dg/). Previously, I was advised by [Herr. Dr. Jonathan Mace](https://people.mpi-sws.org/~jcmace/).
 
-I like building, testing, breaking and fixing software systems. My main areas of interest are Systems, and Software Engineering.
+I like building, testing, breaking, and fixing software systems. My main areas of interest are Systems, and Software Engineering.
 I also like to spend some time on Natural Language Processing and Data Visualization.
 
 My hobbies include watching football, Formula 1, and learning new languages. 
