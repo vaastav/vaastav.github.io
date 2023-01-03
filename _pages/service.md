@@ -11,6 +11,10 @@ description:
 
 + CS-Can Student Symposium 2019
 
+#### Publicity Chair
+
++ JSys (Journal of Systems Research), 2022-current
+
 #### Sub-Reviewer
 
 + Dr. Ivan Beschastnikh, NSDI'20
@@ -22,6 +26,7 @@ description:
 
 ### Events
 
++ Co-Host and co-organizer of [Systems Trivia Night 2: Electric Boogaloo](https://systemstrivia.github.io/) at SOSP'21 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti), [Jonathan Mace](https://people.mpi-sws.org/~jcmace), Zhiqiang Xie, Heming Cui, Xiuxian Gan, Shengliang Deng, Tianyang Duan, and Zongyuan Zhang.
 + Co-Host and co-organizer of [Systems Trivia Night](https://systemstrivia.github.io/) at HotOS'21 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti) and [Jonathan Mace](https://people.mpi-sws.org/~jcmace).
 
 ### Volunteering
