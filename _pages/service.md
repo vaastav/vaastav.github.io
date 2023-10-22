@@ -36,6 +36,7 @@ description:
 
 ### Volunteering
 
++ Student Volunteer, ACM Symposium on Operating Systems Principles, Oct'23
 + Grad Rep, UBC CS Faculty Recruiting Committee, May'19 - Apr'20
 + Grad Rep, UBC CS Program Experience Committee, May'19 - Apr'20
 + Grad Rep, UBC CS Classroom Operations Committee, May'19 - Apr'20
