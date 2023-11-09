@@ -2,7 +2,7 @@
 layout: page
 title: Iridescent
 description: Library for workload-driven online specialization of systems.
-img:
+img: /assets/img/iridescent.png
 research: true
 ---
 
