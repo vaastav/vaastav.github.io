@@ -2,7 +2,7 @@
 layout: page
 title: Hindsight
 description: Distributed Tracing with Retroactive Sampling!
-img:
+img: /assets/img/hindsight.png
 research: true
 ---
 
