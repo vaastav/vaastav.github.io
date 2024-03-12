@@ -18,7 +18,7 @@ We present Blueprint, a microservice development toolchain that enables rapid CB
 
 ## Relevant Links
 
-Blueprint code can be found [here](https://gitlab.mpi-sws.org/cld/blueprint2/blueprint). The original version is available [here](https://gitlab.mpi-sws.org/cld/blueprint/blueprint-compiler).
+Blueprint code can be found [here](https://github.com/Blueprint-uServices/blueprint). The original version is available [here](https://gitlab.mpi-sws.org/cld/blueprint/blueprint-compiler).
 
 Video from the Eurosys Doctoral Workshop 2021 can be found [here](https://www.youtube.com/watch?v=HeKYeBk0CZk&t=1s).
 
