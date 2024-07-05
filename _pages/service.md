@@ -19,18 +19,6 @@ description:
 
 + JSys (Journal of Systems Research), 2022-current
 
-### Events
-
-+ Co-Host and co-organizer of [Systems Trivia Episode III: Revenge of the Bits](https://systemstrivia.github.io/) at HotOS'23 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti)
-+ Co-Host and co-organizer of [Systems Trivia Night 2: Electric Boogaloo](https://systemstrivia.github.io/) at SOSP'21 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti), [Jonathan Mace](https://people.mpi-sws.org/~jcmace), Zhiqiang Xie, Heming Cui, Xiuxian Gan, Shengliang Deng, Tianyang Duan, and Zongyuan Zhang.
-+ Co-Host and co-organizer of [Systems Trivia Night](https://systemstrivia.github.io/) at HotOS'21 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti) and [Jonathan Mace](https://people.mpi-sws.org/~jcmace).
-
-### External Blog Posts & Reports
-
-+ Future of Artifact Evaluation Blog Post at SIGOPS Blog: [link](https://www.sigops.org/2023/artifact-evaluation-theory-and-practice/)
-+ HotOS XIX Panel Report: Panel on Future of Reproduction and Replication of Systems Research: [link](https://arxiv.org/abs/2308.05762)
-+ Trivia SIGOPS Blog Post at SIGOPS Blog: [link](https://www.sigops.org/2023/systems-trivia-behind-the-scenes/)
-
 #### Sub-Reviewer
 
 + Dr. Ivan Beschastnikh, NSDI'20
@@ -40,9 +28,33 @@ description:
 + Dr. Ivan Beschastnikh, ESEC/FSE'18 NIER
 + Dr. Ivan Beschastnikh, ESEM'18
 
+### Events
+
++ Co-Host and co-organizer of [Systems Trivia Episode III: Revenge of the Bits](https://systemstrivia.github.io/) at HotOS'23 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti)
++ Co-Host and co-organizer of [Systems Trivia Night 2: Electric Boogaloo](https://systemstrivia.github.io/) at SOSP'21 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti), [Jonathan Mace](https://people.mpi-sws.org/~jcmace), Zhiqiang Xie, Heming Cui, Xiuxian Gan, Shengliang Deng, Tianyang Duan, and Zongyuan Zhang.
++ Co-Host and co-organizer of [Systems Trivia Night](https://systemstrivia.github.io/) at HotOS'21 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti) and [Jonathan Mace](https://people.mpi-sws.org/~jcmace).
+
+### Talks
+
++ Online specialization and optimization of Systems Software with Iridescent, University of Washington, Jul 2024.
++ Blueprint: A Toolchain for Highly-Reconfigurable Microservice Applications, Azure Monitoring Day of Learning, Jun 2024.
++ Blueprint: A Toolchain for Highly-Reconfigurable Microservice Applications, SOSP, Nov 2023.
++ Blueprint: A Toolchain for Highly-Reconfigurable Microservice Applications, UNSW Sydney, Aug 2023.
++ Blueprint: A Toolchain for Highly-Reconfigurable Microservice Applications, University of Sydney, Aug 2023.
++ The Odd One Out: Energy is not like Other Metrics, HotCarbon, Jul 2022.
++ Millenial: Modular Microservice Macrobenchmarks, Tracing Jamboree @ Emory University, Jun 2021.
++ Dara: Hybrid Model Checking of Distributed Systems, ESEC/FSE SRC, Nov 2018.
+
+### External Blog Posts & Reports
+
++ Future of Artifact Evaluation Blog Post at SIGOPS Blog: [link](https://www.sigops.org/2023/artifact-evaluation-theory-and-practice/)
++ HotOS XIX Panel Report: Panel on Future of Reproduction and Replication of Systems Research: [link](https://arxiv.org/abs/2308.05762)
++ Trivia SIGOPS Blog Post at SIGOPS Blog: [link](https://www.sigops.org/2023/systems-trivia-behind-the-scenes/)
+
 ### Volunteering
 
 + Student Volunteer, ACM Symposium on Operating Systems Principles, Oct'23
++ Organization Committee Member, CMMRS, Aug'22
 + Grad Rep, UBC CS Faculty Recruiting Committee, May'19 - Apr'20
 + Grad Rep, UBC CS Program Experience Committee, May'19 - Apr'20
 + Grad Rep, UBC CS Classroom Operations Committee, May'19 - Apr'20
