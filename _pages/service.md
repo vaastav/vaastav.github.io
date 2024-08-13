@@ -34,9 +34,8 @@ description:
 + Co-Host and co-organizer of [Systems Trivia Night 2: Electric Boogaloo](https://systemstrivia.github.io/) at SOSP'21 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti), [Jonathan Mace](https://people.mpi-sws.org/~jcmace), Zhiqiang Xie, Heming Cui, Xiuxian Gan, Shengliang Deng, Tianyang Duan, and Zongyuan Zhang.
 + Co-Host and co-organizer of [Systems Trivia Night](https://systemstrivia.github.io/) at HotOS'21 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti) and [Jonathan Mace](https://people.mpi-sws.org/~jcmace).
 
-### Talks
+### Invited Talks
 
-+ Online specialization and optimization of Systems Software with Iridescent, University of Washington, Jul 2024.
 + Blueprint: A Toolchain for Highly-Reconfigurable Microservice Applications, Azure Monitoring Day of Learning, Jun 2024.
 + Blueprint: A Toolchain for Highly-Reconfigurable Microservice Applications, SOSP, Nov 2023.
 + Blueprint: A Toolchain for Highly-Reconfigurable Microservice Applications, UNSW Sydney, Aug 2023.
