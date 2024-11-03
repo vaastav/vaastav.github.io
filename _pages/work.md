@@ -5,6 +5,20 @@ title: Work
 description: Work History
 ---
 
+### Microsoft
+
+<details><summary>Details</summary>
+
+<h4> Research Intern, Azure Research - Systems, May 2024 - Jul 2024 </h4>
+
+<ul>
+<li> Developed Cerulean, a system that uses LLMs for microservice system design.</li>
+<li> Mentors: Rodrigo Fonseca, Alok Gautam Kumbhare</li>
+<li> Other Collaborators: Pedro Las-Casas, Celine Irvene, Jonathan Mace, Gagan Somashekar, Chetan Bansal</li>
+</ul>
+
+</details>
+
 ### MPI-SWS
 
 <details><summary>Details</summary>
