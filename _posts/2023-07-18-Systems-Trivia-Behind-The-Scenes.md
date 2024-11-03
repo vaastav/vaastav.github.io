@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Systems Trivia - Behind The Scenes
-date: 2024-11-01
+date: 2023-07-19
 keywords:
   - trivia
 tags:
