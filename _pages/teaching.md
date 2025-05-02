@@ -6,9 +6,12 @@ description:
 ---
 
 I have always enjoyed teaching as I feel that teaching helps you understand
-the topic at a deeper level. I haven't had a chance to run my own course yet but
-hopefully that will change in the future. Meanwhile, I have been a Teaching Assistant
+the topic at a deeper level. I have developed and taught a seminar course on Cloud Reliability. Additionally, I have been a Teaching Assistant
 for 13 different terms for 10 different courses.
+
+### Main Instructor
+
++ Reliability in Modern Cloud Systems, University of Saarland, Apr'25-Jul'25.
 
 ### Teaching Assistantship
 
