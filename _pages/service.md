@@ -37,6 +37,8 @@ description:
 
 ### Talks
 
++ Automated Service Design with Cerulean, AIOps, May 2025.
++ Towards Using LLMs for Distributed Trace Comparison, AIOps, May 2025.
 + Online Specialization of Systems with Iridescent, SOSP SRC, Nov 2024.
 + Blueprint: A Toolchain for Highly-Reconfigurable Microservice Applications, Azure Monitoring Day of Learning, Jun 2024.
 + Blueprint: A Toolchain for Highly-Reconfigurable Microservice Applications, SOSP, Nov 2023.
