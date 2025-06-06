@@ -32,11 +32,13 @@ description:
 ### Events
 
 + Co-Host and co-organizer of [Systems Trivia Episode III: Revenge of the Bits](https://systemstrivia.github.io/) at HotOS'23 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti)
++ Co-Organizer of Panel on Future of Reproduction and Replication of Systems Research at HotOS'23 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti) and [Solal Pirelli](https://solalpirelli.github.io/)
 + Co-Host and co-organizer of [Systems Trivia Night 2: Electric Boogaloo](https://systemstrivia.github.io/) at SOSP'21 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti), [Jonathan Mace](https://people.mpi-sws.org/~jcmace), Zhiqiang Xie, Heming Cui, Xiuxian Gan, Shengliang Deng, Tianyang Duan, and Zongyuan Zhang.
 + Co-Host and co-organizer of [Systems Trivia Night](https://systemstrivia.github.io/) at HotOS'21 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti) and [Jonathan Mace](https://people.mpi-sws.org/~jcmace).
 
 ### Talks
 
++ Blueprint: A Toolchain for Highly-Reconfigurable Microservice Applications, IISc Bangalore, May 2025.
 + Automated Service Design with Cerulean, AIOps, May 2025.
 + Towards Using LLMs for Distributed Trace Comparison, AIOps, May 2025.
 + Online Specialization of Systems with Iridescent, SOSP SRC, Nov 2024.
