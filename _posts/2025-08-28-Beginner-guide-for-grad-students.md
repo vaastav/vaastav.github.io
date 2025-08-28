@@ -53,7 +53,13 @@ As practice, in Margo's seminar, we often used to write fairytale versions for t
 Here is example structure of fairytale:
 
 ```
-Once upon a time, <What is the problem>. <Why the problem is important>. <Why are the challenges>. To solve these challenges, we propose a new system \sys. \sys solves the challenges with <insert key insights>. With \sys, we see <insert best evidence>. Because of \sys, everyone now lives happily ever after.
+Once upon a time, <What is the problem>. 
+<Why the problem is important>. 
+<What are the challenges>. 
+To solve these challenges, we propose a new system \sys. 
+\sys solves the challenges with <insert key insights>. 
+With \sys, we see <insert best evidence>. 
+Because of \sys, everyone now lives happily ever after.
 ```
 
 ### Storyboarding
@@ -82,7 +88,23 @@ When you are presenting your work to a person or a group of people, you should t
 
 There are people better equipped than me to explain how to do good research in general or how to do research in a specific area. I'll only talk about two techniques here that I think are critical but also widely applicable.
 
-### The Scientific Method: Fake Eval edition
+### The Scientific Method: Fake Eval Edition
+
+At the end of the day, we are science researchers (or at least claim to be), so it is imperative that we actually follow the scientific method (or the scientific process). In a nutshell, as part of the scientific method, we start with a research question, formulate a hypothesis, conduct experiments designed to test the hypothesis, and then analyze the experimental data to either validate the hypothesis or to disprove the hypothesis.
+
+The scientific method is extremely useful right before you even start doing the evaluation experiments. The scientific method simply provides a strict ordering on the tasks you would undertake when doing experiments. The ordering is usually as follows:
+
++ Step 1: Figuring out what is the exact experimental question you want to answer. Eg: Does my new system solve the problem?
++ Step 2: Deciding the experimental setup and the data we will be collecting to answer the question. Eg: To see if our system solves the problem, we will execute a wide variety of workloads with our new system and collect a specific metric (eg: throughput or p99 latency). As a baseline, we will also run the same variety of workloads on another system that does not handle this problem and collect the same metric.
++ Step 3: Formulating the hypothesis. This is essentially you saying what you think you expect to see from the experiment! Eg: We expect that our new system is solves the problem produced by the variety of workloads by improving the collected metric in comparison to our baseline.
++ Step 4: Executing the experiments and collecting the data!
++ Step 5: Testing the hypothesis. You now test the hypothesis you formulated in step 3 by using the data you collected in step 4 from running the experiments you designed in step 2.
+
+You may notice that Step 1-3 are completely independent of ever running the experiments. They will remain the same regardless of whether you have the results or not.
+
+And this is where the Fake Eval kicks in. Instead of waiting for the results to come in to write the section, you can pretty much write your full evaluation section by using all the artifacts you created in Steps 1 through 3. Moreover, you can actually write a full evaluation by simply using the predictions based on your hypothesis to generate fake graphs (that you expect to see) even before you have actually ran the experiments. This also helps you write the scripts in advance that you would need to parse and analyze the collected data.
+
+
 
 ### Reproducible Experiments?
 
