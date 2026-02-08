@@ -9,6 +9,7 @@ description:
 
 #### Program Committee Member
 
++ SoCC 2026
 + EuroSys Posters 2025
 + CS-Can Student Symposium 2019
 
