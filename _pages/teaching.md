@@ -11,18 +11,29 @@ for 13 different terms for 10 different courses.
 
 ### Main Instructor
 
-+ Reliability in Modern Cloud Systems, University of Saarland, Apr'25-Jul'25.
++ [Reliability in Modern Cloud Systems](https://cms.sic.saarland/cldrel_25/), Saarland University
+    + 2025SS
 
 ### Teaching Assistantship
 
-+ Distributed Systems (Core Course), University of Saarland, Apr'21-Aug'21
-+ CPSC 313 : Computer Hardware and Operating Systems, UBC, Jan'20 - Apr'20
-+ CPSC 508 : Graduate Operating Systems, UBC, Sep'19 - Dec'19
-+ CPSC 416 : Distribtued Systems, UBC, Sep'18 - Dec'18
-+ Algorithms and the Internet, Vancouver Summer Program, Jul'18 - Aug'18
-+ CPSC 210 : Software Construction, UBC, Jan'18 - Apr'18
-+ CPSC 415 : Advanced Operating Systems, UBC, Sep'17 - Dec'17
-+ CPSC 320 : Intermediate Algorithm Design and Analysis, UBC, Jan'17 - Apr'17
-+ CPSC 313 : Computer Hardware and Operating Systems, UBC, Sep'16 - Dec'16
-+ CPSC 213 : Introduction to Computer Systems, UBC, Jul'15 - Aug'15
-+ CPSC 121 : Models of Computation, UBC, Sep'14 - Jun'15
++ Distributed Systems (Core Course), Saarland University
+    + 2021SS
++ CPSC 508 : Graduate Operating Systems, UBC
+    + 2019W1
++ Algorithms and the Internet, UBC
+    + Vancouver Summer Program (VSP) 2018
++ CPSC 416 : Distributed Systems, UBC
+    + 2018W1
++ CPSC 415 : Advanced Operating Systems, UBC
+    + 2017W1
++ CPSC 320 : Intermediate Algorithm Design and Analysis, UBC
+    + 2016W2
++ CPSC 313 : Computer Hardware and Operating Systems, UBC
+    + 2019W2, 2016W1
++ CPSC 213 : Introduction to Computer Systems, UBC
+    + 2015S
++ CPSC 210 : Software Construction, UBC
+    + 2017W2
++ CPSC 121 : Models of Computation, UBC
+    + 2015S, 2014W2, 2014W1
+

@@ -40,7 +40,7 @@ awards: true
 <li> Exploratory Data Analysis - John Hopkins University </li>
 <li> Structuring Machine Learning Projects - deeplearning.ai </li>
 <li> Getting and Cleaning Data - John Hopkins University </li>
-<li> R Programming - John Hopkins Univesrity </li>
+<li> R Programming - John Hopkins University </li>
 <li> The Data Scientist's Toolbox - John Hopkins University </li>
 </ul>
 
