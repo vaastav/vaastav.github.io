@@ -22,7 +22,7 @@ Here are the relevant documents:
 + [Teaching Statement](/assets/pdf/vaastav_teaching_statement.pdf){:target="\_blank"}
 + [Diversity Statement](/assets/pdf/vaastav_diversity_statement.pdf){:target="\_blank"}
 
-I am a Doctoral Researcher at [Max Planck Institute for Software Systems (MPI-SWS)](https://www.mpi-sws.org/) where I work under the supervision of [Dr. Antoine Kaufmann](https://people.mpi-sws.org/~antoinek/) and [Dr. Deepak Garg](https://people.mpi-sws.org/~dg/). Previously, I was advised by [Herr. Dr. Jonathan Mace](https://people.mpi-sws.org/~jcmace/).
+I am a Doctoral Researcher at [Max Planck Institute for Software Systems (MPI-SWS)](https://www.mpi-sws.org/) where I work under the supervision of [Dr. Antoine Kaufmann](https://people.mpi-sws.org/~antoinek/) and [Dr. Deepak Garg](https://people.mpi-sws.org/~dg/). Previously, I was advised by [Herr. Dr. Jonathan Mace](https://jonathanmace.github.io/).
 
 I like building, testing, breaking, and fixing software systems. My primary area of interest is Cloud Systems Reliability and Efficiency.
 
