@@ -13,8 +13,9 @@ Hopefully, coming soon :)
 
 ### Current
 
-+ Ali Fahad Khan (MSc since 2025)
-+ Zawyar Ur Rehman (MSc since 2025)
++ Mariantonietta "Alex" Calò (BSc thesis 2026-)
++ Ali Fahad Khan (MSc thesis 2025-)
++ Zawyar Ur Rehman (MSc thesis 2025-)
 
 ### Alumni
 
