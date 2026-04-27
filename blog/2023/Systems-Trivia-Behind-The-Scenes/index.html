@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  <meta name="keywords" content="trivia">
+  
+
+  <title>Vaastav Anand | Systems Trivia - Behind The Scenes</title>
+  <meta name="description" content="Vaastav Anand is a Doctoral Researcher at MPI-SWS working under the supervision of Dr. Antoine Kaufmann and Dr. Deepak Garg.
+">
+
+  <link href="assets/css/rotating-card.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/blog/2023/Systems-Trivia-Behind-The-Scenes/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        <strong>Vaastav</strong> Anand
+    </span>
+    
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="/">About</a>
+
+        <!-- Pages -->
+        
+          
+        
+          
+            <a class="page-link" href="/education/">Education</a>
+          
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="/misc/">Misc</a>
+          
+        
+          
+            <a class="page-link" href="/publications/">Publications</a>
+          
+        
+          
+            <a class="page-link" href="/service/">Service</a>
+          
+        
+          
+            <a class="page-link" href="/teaching/">Teaching</a>
+          
+        
+          
+            <a class="page-link" href="/team/">Team</a>
+          
+        
+          
+            <a class="page-link" href="/work/">Work</a>
+          
+        
+          
+        
+
+        <!-- Blog -->
+        <a class="page-link" href="/blog/">Blog</a>
+
+        <!-- CV link -->
+        <!-- <a class="page-link" href="/assets/pdf/CV.pdf">vitae</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Systems Trivia - Behind The Scenes</h1>
+    <p class="post-meta">July 19, 2023</p>
+  </header>
+
+  <article class="post-content">
+    <p>This post provides a behind the scenes look into the 3 systems trivia events we (Roberta De Viti and I) have run so far at Systems conferences.</p>
+
+<p>This post is a re-post of the <a href="https://www.sigops.org/2023/systems-trivia-behind-the-scenes/">SIGOPS Blog Post</a> that we were invited to write by editor Tianyin Xu.</p>
+
+<p><img src="/assets/system_trivia_1.png" width="1024" height="572" /></p>
+
+<h2 id="the-original-script">The Original Script</h2>
+
+<p>We ran our first trivia event at the first – and hopefully last – virtual edition of HotOS: HotOS ’21. The  idea of a potential trivia event came about due to a combination of three independent things: (1) the lockdown killing everyone’s social life and bringing up the need for something fun; (2) HotOS ’21 releasing a Call for Panels; and (3) Paulette Koronkevich and Jose Calderon organising a very successful virtual Trivia event at PLDI’20, which served as the primary social mixer.</p>
+
+<p>So, after seeing that HotOS ’21 call for panels, as systems researchers we had an age-old idea: let’s implement the techniques of PL researchers in the context of the systems community! We realised that a fully virtual HotOS programme would leave very little room for the kind of social mixing we would normally experience in the hallways… To fill this need, we decided to write down a proposal for the first ever Systems Trivia Night at HotOS ’21, which got accepted, and the rest is history. But what happened behind the scenes?</p>
+
+<p>First thing, we contacted the PL Trivia Masters, Paulette and Jose, to learn the operational insights of their virtual Trivia Event. The main takeaway actually ended up being about content selection. The PL Trivia was structured as a pub quiz, with the content including fun general knowledge questions. Would this have worked in the systems community? Honestly, we were afraid they wouldn’t have engaged that much, so we decided to focus the Trivia content around what the systems community was most passionate about – systems. With this insight, all that was left was how to create a fun experience for everyone, how to make questions, how to present without us looking like dorks… we failed at the last one, but more on the rest later. Our initial strategy for questions was to source content from the community but we abandoned that strategy in favour of making up our own questions!</p>
+
+<p><strong>#Advertisement</strong>: Systems Trivia is an MPI-SWS production. We’d like to thank Jonathan Mace for being ultra-supportive of the ideas and motivating us.</p>
+
+<h2 id="multiple-takes">Multiple Takes</h2>
+
+<p>Our intention was for the Systems Trivia Night at HotOS ’21 be a one-off event to foster community bonding in the middle of the pandemic. However, the event unexpectedly turned out to be greatly successful, and the Chairs of SOSP ’21 (Vijay Chidambaram and Anthony Joseph) and HotOS ’23 (Natacha Crooks and Andrew Baumann) reached out and asked us to organize more Trivia events at both these venues. An offer we couldn’t refuse.</p>
+
+<p><strong><em>SOSP ’21</em></strong>. With new events come new responsibilities. First, not only SOSP ’21 was virtual… it was an event mirrored for the Asia-Pacific timezone.  This mirroring required solving both organizational challenges and content challenges. To solve the organizational challenges, we ended up having two different teams for running two different Trivia instances, one for each mirror. To solve the content challenges, we had to decide whether we wanted to tailor content to specific regions: ultimately, we opted for the simpler and less-overhead-prone solution of having the same content for both instances, and the Asia-Pacific team decided to play a recording from the live session to present questions and answers. SOSP ’21 also made us rethink some of our sections… Reaching out to members of the community and asking them to pick their favorite paper does not scale, as only a small subset replied. So, we decided not to rely on the community as a source for future events.</p>
+
+<p><img src="/assets/systems_trivia_2.png" alt="systems_trivia_2" /></p>
+
+<p><em>HotOS ’23</em>. This was the first in-person event that we had ever organized. Hosting an in-person event meant we had to throw away all the operational knowledge we had learnt over the past two trivia events and start from scratch. Thankfully, organizing an in-person event has its silver linings, as we didn’t need to do the grading ourselves… but we did forget to ask attendees to bring pens to fill out their quiz forms. Oops.</p>
+
+<p><img src="/assets/systems_trivia_3.png" alt="systems_trivia_3" /></p>
+
+<h2 id="storyboarding-questions">Storyboarding Questions</h2>
+
+<p>How to pick good questions? We don’t have a straight answer for that and mostly go with the flow, but here are some points we definitely agree on.</p>
+
+<ul>
+  <li>Somehow, questions have to be fun. That was the whole point after all.</li>
+  <li>Questions can’t be too hard or people lose interest.</li>
+  <li>Questions can’t be too easy or people lose interest.</li>
+  <li>Questions can’t be biased to a subset of the audience: they have to be doable for both the experienced members and the youngblood researchers.</li>
+  <li>We can’t repeat questions or answers through different editions (well, we could, but decided against it). Still, the pool of most famous systems isn’t that wide after three editions!</li>
+  <li>As mentioned above, relying on other community members is not a scalable approach.</li>
+</ul>
+
+<p>Here is a list of the kind of rounds we organized. We thought too many questions of the same type would have been boring, so opted for a bit of variation:</p>
+
+<ul>
+  <li><em>What’s that paper?</em> The participants have to guess the name of the paper from a short description. Probably the most popular round.</li>
+  <li><em>Mace’s Believe it or Not?</em> A community member writes up an anecdote and the participants have to guess whether this is real life or just fantasy. We dropped this round because the participants didn’t like to guess.</li>
+  <li><em>Turing Awards.</em> This round proposes Trivia about Turing Award winners. Given its limited number and even more limited diversity, it didn’t make it past the first Trivia edition.</li>
+  <li><em>Head-to-Head.</em> The participants are given two papers and have to guess which one has more citations. The papers are on similar topics, have a close number of citations, and sometimes the answer is not what you expect.</li>
+  <li><em>Guess Who?</em> This was just a practice round, useful to get participants accustomed to the virtual format. They were given a picture of a researcher and had to guess the name of the person.</li>
+  <li><em>Have you been paying attention?</em> This was another practice round testing how well the participants have been paying attention during the conference.</li>
+  <li><em>History 101.</em> This round contains general Trivia questions about well known papers, members of the community, or conference facts.</li>
+  <li><em>Know Thy System.</em> The participants have to recognize a particular system from, e.g., an architecture diagram. The first iteration of this round included systems design figures from their papers; we tried to spice things up in the second iteration by using emojis as hints for the paper name… We thought this would have advantaged students, but the results highlighted that even senior community members have a good level of pop culture knowledge.</li>
+</ul>
+
+<h2 id="in-production">In Production</h2>
+
+<p>A systems blog post would really be incomplete without an evaluation section. Here are some statistical highlights from these past three editions:</p>
+
+<ul>
+  <li>HotOS ’21: 13 participating teams (up to 5 members) and 203 unique viewers on Twitch. “UBC Systopia” (David Holland, Aastha Mehta, Reto Achermann, Sid Agrawal, Puneet Mehrotra) won with 27/35 points.</li>
+  <li>SOSP ’21: 10 participating teams (up to 5 members) and 121 unique viewers on Twitch. “Team Demikernel” (Irene Zhang, Pedro Penna) won with 153/200 points.</li>
+  <li>HotOS ’23: 11 teams (up to 5 members each) and ~100 HotOS attendees. “5 Colors of the Rainbow” (Shirley Loayza Sanchez, Ada Gavrilovska, Timothy Roscoe, Phil Levis, Jeff Mogul) won with 26/30 points. Someone made us notice they got an unfair advantage, though: Mothy and Jeff had authored a few too many answers.</li>
+</ul>
+
+<h2 id="prizes">Prizes</h2>
+
+<p>Our original idea was to give physical Bitcoin coins along with corresponding NFTs… But turns out we were too lazy to figure out how to mint an NFT, so all the winners got was this priceless piece of metal. They better have it on display!</p>
+
+<p><img src="/assets/systems_trivia_4.png" alt="systems_trivia_3" /></p>
+
+<h2 id="post-credit-outtakes">Post-Credit Outtakes</h2>
+
+<p>Wait, did you think it was over? It’s only fitting that a blog post about Trivia ends on a trivia question. Here is an example of a very silly question that never made it to an official Trivia event – and never will:</p>
+
+<p>What does a Turing Award prize resemble the most?</p>
+
+<ul>
+  <li>Helga Hufflepuff’s cup</li>
+  <li>Traditional Pasta Colander</li>
+  <li>Inverted Army Soldier’s Hat</li>
+  <li>Holy Grail</li>
+</ul>
+
+<p>The answer to this question is left as an exercise to the reader. Once you see it, it cannot be unseen.</p>
+
+  </article>
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer>
+
+  <div class="wrapper">
+    &copy; Copyright 2026 Vaastav Anand.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+<script src="/assets/js/katex.js"></script>
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-118052019-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+
+</html>
