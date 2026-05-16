@@ -7,7 +7,7 @@ description: Full Education and Awards history
 awards: true
 ---
 
-### Max Planck Institute for Software-Systems
+### Max Planck Institute for Software-Systems, Saarland University
 
 + PhD in Computer Science, Sept 2020 - current
 
