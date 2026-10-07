@@ -44,11 +44,45 @@ in the coming years but one thing we may see more of is model selection, i.e., w
 ### What research should we be doing?
 
 Models are improving at a breakneck speed! Harnesses that are required for a specific model version
-can become obsolete for the next generation of the same model. Any resaerch that tries to box in the
+can become obsolete for the next generation of the same model. Any research that tries to box in the
 capabilities of the model is not very likely to survive model improvements.
 
-**Open-Weight Models:**
+**Open-Weight Models:** These models while not as performant as the proprietary models but they can be useful from a privacy and efficiency point-of-view. However, currently these models lack the ecosystem for getting the user feedback in the loop to improve these models.
+Training these models remains super hard and inefficient.
 
-### SOSP In 2030
+**Specialized Models:** Smaller specialized models could prove to be more efficient than the large language models. 
 
-TODO: Vaastav - create a survey link where we can collect what SOSP will look like in 2030.
+**Stronger Guarantees:** We should be developing techniques that can provide stronger guarantees about the system and ways to more efficiently verify the outputs of the models.
+
+**Industry Problems:** We also should not be restricting ourselves in terms of the problems we tackle. Benefit of academia is that we can take different approaches than industry to tackle problems.
+
+### What will SOSP look like in 2030?
+
+Given the attack of LLMs on the field of mathematics, one might be inclined to believe the pessimistic worst-case scenario
+that maybe by 2030, SOSP would cease to exist. Given the "Navier Stokes" incident and the subsequent release of lean proofs
+for various open math problems, the doom-scroller in me thinks that the pessimistic case might just become the reality of our world.
+
+However, the panelists did provide a far more believable scenario that there will be an cambrian explosion of papers with certain themes. Formal Verification papers,
+New Hardware systems papers, and Bespoke systems papers will probably dominate the SOSP schedule in the coming years.
+We may even see a collapse in reliability of systems (the reliability researcher in me was very happy to hear this as this hopefully indicates some sort of job security :P).
+Finally, there was consensus that with the speed of advancement on show at the moment, one really can not predict what is going to happen in the next few months let alone in the next few years.
+
+If you want to provide your opinion or thoughts on what SOSP will/should look like in 2030, consider completing this very short [survey](https://forms.gle/Lk3gZgBfm4xBqomZ9) that I have set up.
+
+### What should we be teaching students?
+
+Clearly, the rise of LLMs and agents has not just been disruptive in research but also in teaching.
+While the purists (which I think I am one of?) believe that students should learn the fundamentals of computer science,
+this may not be what students believe is the actual thing they want to learn.
+
+The panelists also shared the purist viewpoint that it is important to learn the fundamentals and nothing about the first couple
+of years of undergraduate should change as that is the period that teaches the students to learn the fundamentals.
+For later years and masters courses, the projects could instead focus on getting students to use AI to build better systems or policies in constrained settings to better teach students on how to interact with models.
+Panelists also thought that the people who are most effective with agents are the people that truly understand the concepts
+at a fundamental level. But there was a shared concern among the panelists that now they probably have to justify why they are teaching
+certain material to the students. Another concern was how do we actually check if students are actually learning and not just offloading
+the actual programming tasks to their favourite LLM. The panelists believe that the future of grading is going to be in-class grading
+which might require students to explain what they did and how they did it. 
+
+The thing we ideally want to teach students is that for anything they build, they will be the ones held responsible and accountable for their software.
+This has been implicit so far in almost all courses, the rise of LLMs necessitates that this becomes an explicit learning goal.
