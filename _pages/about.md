@@ -1,14 +1,14 @@
 ---
 layout: about
 permalink: /
-title: <strong>Vaastav</strong> Anand
-description: PhD Student, MPI-SWS
+title: Dr. <strong>Vaastav</strong> Anand
+description: Postdoc, ETH Zürich
 
 profile:
   align: right
   image: profile_new.jpg
   address: >
-    <p>Saarbruecken, Germany</p>
+    <p>Saarbrücken, Germany</p>
 
 news: true
 social: true
@@ -16,7 +16,7 @@ social: true
 
 I like building, testing, breaking, and fixing software systems. My primary area of interest is Cloud Systems Reliability and Efficiency.
 
-I will be joining ETH Zurich as a Postdoctoral Researcher in the EASL group under the supervision of [Dr. Ana Klimovic](https://anakli.inf.ethz.ch/).
+I will be joining ETH Zürich as a Postdoctoral Researcher in the EASL group under the supervision of [Dr. Ana Klimovic](https://anakli.inf.ethz.ch/).
 
 I was a Doctoral Researcher at [Max Planck Institute for Software Systems (MPI-SWS)](https://www.mpi-sws.org/) and Saarland University where I worked under the supervision of [Dr. Antoine Kaufmann](https://people.mpi-sws.org/~antoinek/) and [Dr. Deepak Garg](https://people.mpi-sws.org/~dg/). Previously, I was advised by [Dr. Jonathan Mace](https://jonathanmace.github.io/).
 Before starting my doctoral degree, I was a M.Sc. student in the [Network, Systems, and Security Lab](https://www.cs.ubc.ca/labs/nss/html/index.html){:target="\_blank"} at The University of British Columbia where I worked with [Dr. Ivan Beschastnikh](https://www.cs.ubc.ca/~bestchai/){:target="\_blank"} and [Dr. Margo Seltzer](https://www.seltzer.com/margo/).
