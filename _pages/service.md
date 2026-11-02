@@ -20,6 +20,7 @@ description:
 
 #### Events Organizer
 
++ Co-organizer of [Tutorial on Using Blueprint to Accelerate Microservice Research](https://blueprint-uservices.github.io/sosp/) at SOSP'26 with [Dr. Antoine Kaufmann](https://people.mpi-sws.org/~antoinek/).
 + Co-Host and co-organizer of [Systems Trivia Episode III: Revenge of the Bits](https://systemstrivia.github.io/) at HotOS'23 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti)
 + Co-Organizer of Panel on Future of Reproduction and Replication of Systems Research at HotOS'23 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti) and [Solal Pirelli](https://solalpirelli.github.io/)
 + Co-Host and co-organizer of [Systems Trivia Night 2: Electric Boogaloo](https://systemstrivia.github.io/) at SOSP'21 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti), [Jonathan Mace](https://people.mpi-sws.org/~jcmace), Zhiqiang Xie, Heming Cui, Xiuxian Gan, Shengliang Deng, Tianyang Duan, and Zongyuan Zhang.
