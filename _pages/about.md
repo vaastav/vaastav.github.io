@@ -2,7 +2,7 @@
 layout: about
 permalink: /
 title: Dr. <strong>Vaastav</strong> Anand
-description: Postdoc, ETH Zürich
+description: 
 
 profile:
   align: right

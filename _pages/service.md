@@ -13,13 +13,17 @@ description:
 + EuroSys Posters 2025
 + CS-Can Student Symposium 2019
 
-#### Panel Organizer
-
-+ Panel on the future of Reproducibility and Replication @ HotOS'23
-
 #### Publicity Chair
 
-+ JSys (Journal of Systems Research), 2022-current
++ SOSP (Symposium on Operating Systems Principles), 2027
++ JSys (Journal of Systems Research), 2022-2023
+
+#### Events Organizer
+
++ Co-Host and co-organizer of [Systems Trivia Episode III: Revenge of the Bits](https://systemstrivia.github.io/) at HotOS'23 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti)
++ Co-Organizer of Panel on Future of Reproduction and Replication of Systems Research at HotOS'23 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti) and [Solal Pirelli](https://solalpirelli.github.io/)
++ Co-Host and co-organizer of [Systems Trivia Night 2: Electric Boogaloo](https://systemstrivia.github.io/) at SOSP'21 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti), [Jonathan Mace](https://people.mpi-sws.org/~jcmace), Zhiqiang Xie, Heming Cui, Xiuxian Gan, Shengliang Deng, Tianyang Duan, and Zongyuan Zhang.
++ Co-Host and co-organizer of [Systems Trivia Night](https://systemstrivia.github.io/) at HotOS'21 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti) and [Jonathan Mace](https://people.mpi-sws.org/~jcmace).
 
 #### Sub-Reviewer
 
@@ -29,13 +33,6 @@ description:
 + William Anthony Mason, SIGCSE'19
 + Dr. Ivan Beschastnikh, ESEC/FSE'18 NIER
 + Dr. Ivan Beschastnikh, ESEM'18
-
-### Events
-
-+ Co-Host and co-organizer of [Systems Trivia Episode III: Revenge of the Bits](https://systemstrivia.github.io/) at HotOS'23 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti)
-+ Co-Organizer of Panel on Future of Reproduction and Replication of Systems Research at HotOS'23 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti) and [Solal Pirelli](https://solalpirelli.github.io/)
-+ Co-Host and co-organizer of [Systems Trivia Night 2: Electric Boogaloo](https://systemstrivia.github.io/) at SOSP'21 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti), [Jonathan Mace](https://people.mpi-sws.org/~jcmace), Zhiqiang Xie, Heming Cui, Xiuxian Gan, Shengliang Deng, Tianyang Duan, and Zongyuan Zhang.
-+ Co-Host and co-organizer of [Systems Trivia Night](https://systemstrivia.github.io/) at HotOS'21 with [Roberta De Viti](https://people.mpi-sws.org/~rdeviti) and [Jonathan Mace](https://people.mpi-sws.org/~jcmace).
 
 ### Talks
 
