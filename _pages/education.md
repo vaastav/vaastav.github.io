@@ -9,12 +9,12 @@ awards: true
 
 ### Max Planck Institute for Software-Systems, Saarland University
 
-+ PhD in Computer Science, Sept 2020 - current
++ Doctor of Engineering, Sep 2020 - Sep 2026
 
 ### University of British Columbia
 
-+ Master of Science, Sept 2018 - Aug 2020
-+ Bachelor of Science, Sept 2013 - May 2018
++ Master of Science, Sep 2018 - Aug 2020
++ Bachelor of Science, Sep 2013 - May 2018
 
 ### Vancouver Institute of Visual Analytics
 

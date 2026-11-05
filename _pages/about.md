@@ -8,7 +8,7 @@ profile:
   align: right
   image: profile_new.jpg
   address: >
-    <p>Saarbrücken, Germany</p>
+    <p>Zürich, Switzerland</p>
 
 news: true
 social: true
@@ -16,7 +16,7 @@ social: true
 
 I like building, testing, breaking, and fixing software systems. My primary area of interest is Cloud Systems Reliability and Efficiency.
 
-I will be joining ETH Zürich as a Postdoctoral Researcher in the EASL group under the supervision of [Dr. Ana Klimovic](https://anakli.inf.ethz.ch/).
+I am a Postdoctoral Researcher in the EASL group at ETH Zürich under the supervision of [Dr. Ana Klimovic](https://anakli.inf.ethz.ch/) since December 2026.
 
 I was a Doctoral Researcher at [Max Planck Institute for Software Systems (MPI-SWS)](https://www.mpi-sws.org/) and Saarland University where I worked under the supervision of [Dr. Antoine Kaufmann](https://people.mpi-sws.org/~antoinek/) and [Dr. Deepak Garg](https://people.mpi-sws.org/~dg/). Previously, I was advised by [Dr. Jonathan Mace](https://jonathanmace.github.io/).
 Before starting my doctoral degree, I was a M.Sc. student in the [Network, Systems, and Security Lab](https://www.cs.ubc.ca/labs/nss/html/index.html){:target="\_blank"} at The University of British Columbia where I worked with [Dr. Ivan Beschastnikh](https://www.cs.ubc.ca/~bestchai/){:target="\_blank"} and [Dr. Margo Seltzer](https://www.seltzer.com/margo/).

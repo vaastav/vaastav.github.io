@@ -5,6 +5,14 @@ title: Work
 description: Work History
 ---
 
+### ETH Zürich
+
+<details><summary>Details</summary>
+
+<h4>Postdoctoral Researcher, Dec 2026 - current</h4>
+
+</details>
+
 ### Microsoft
 
 <details><summary>Details</summary>
@@ -83,8 +91,8 @@ description: Work History
 <details><summary>Details</summary>
 
 <ul>
-<li>Graduate Research Assistant, Computer Science Department, Jan 2019 - current</li>
-<li>Graduate Teaching Assistant, Computer Science Department, Sep 2019 - current</li>
+<li>Graduate Research Assistant, Computer Science Department, Jan 2019 - Aug 2020</li>
+<li>Graduate Teaching Assistant, Computer Science Department, Sep 2019 - Apr 2020</li>
 <li>Graduate Teaching Assistant, Computer Science Department, Sep 2018 - Dec 2018</li>
 <li>Undergraduate Researcher, Computer Science Department, May 2018 - Aug 2018</li>
 <li>Research Assistant, Interdisciplinary Speech Research Lab, Nov 2017 - Apr 2018</li>
