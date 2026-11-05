@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  <meta name="keywords" content="panel">
+  
+
+  <title>Vaastav Anand | Summary of the PACMI 2026 Panel Discussion on Systems Research in the AGI Era</title>
+  <meta name="description" content="Vaastav Anand is a Doctoral Researcher at MPI-SWS working under the supervision of Dr. Antoine Kaufmann and Dr. Deepak Garg.
+">
+
+  <link href="assets/css/rotating-card.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/blog/2026/PACMI26-Panel-Report/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        <strong>Vaastav</strong> Anand
+    </span>
+    
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="/">About</a>
+
+        <!-- Pages -->
+        
+          
+        
+          
+            <a class="page-link" href="/education/">Education</a>
+          
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="/misc/">Misc</a>
+          
+        
+          
+            <a class="page-link" href="/publications/">Publications</a>
+          
+        
+          
+            <a class="page-link" href="/service/">Service</a>
+          
+        
+          
+            <a class="page-link" href="/teaching/">Teaching</a>
+          
+        
+          
+            <a class="page-link" href="/team/">Team</a>
+          
+        
+          
+            <a class="page-link" href="/work/">Work</a>
+          
+        
+          
+        
+
+        <!-- Blog -->
+        <a class="page-link" href="/blog/">Blog</a>
+
+        <!-- CV link -->
+        <!-- <a class="page-link" href="/assets/pdf/CV.pdf">vitae</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Summary of the PACMI 2026 Panel Discussion on Systems Research in the AGI Era</h1>
+    <p class="post-meta">September 29, 2026</p>
+  </header>
+
+  <article class="post-content">
+    <h1 id="about-the-panel">About the Panel</h1>
+
+<p>The <a href="https://sites.google.com/view/pacmi/">PACMI 2026</a> workshop at SOSP 2026 in Prague, Czechia
+organized a timely panel discussion on what systems research would look like in the current era
+with the rise of the AI models.
+The panelists were Laurent Bindschaedler (MPI-SWS), Ana Klimovic (ETH Zürich), and Shivaram Venkatraman (ETH Zürich)
+with Kostis Kaffes (Columbia University) serving as the moderator.</p>
+
+<p>In this blog post, I will be discussing some of the key topics and themes of the panel discussion, the thoughts of the panelists, audience participation,
+and some of my personal thoughts.</p>
+
+<h2 id="panel-summary">Panel Summary</h2>
+
+<h3 id="are-we-in-the-agi-era">Are we in the AGI era?</h3>
+
+<p>The starting theme of the panel was whether the panelists agreed if we were in an AGI era. 
+The panelists agreed that we are not in an AGI era currently especially given that there is no agreed upon definition
+of what AGI truly means.
+The models have improved intelligence but the models today have the capability today for being so good but also stupid. 
+Models today are good at things that we can easily verify but it is unknown what these things will be good in the future.</p>
+
+<h3 id="whats-different-about-working-in-ai-now">What’s different about working in AI now?</h3>
+
+<p>The quality of output is much better now. The use of AI in systems research was clunky
+as researchers typically used small models on the critical path of the system execution.
+This meant that the use of the models and AI in systems code needed to be surgical.
+But now, models are more capable and have the ability to generate code.
+SO, now they are moere usable in the system context because they are not limited to the critical path.
+There are open questions in model design and harness design and we may keep switching between these two problems
+in the coming years but one thing we may see more of is model selection, i.e., which model to use for which task.</p>
+
+<h3 id="what-research-should-we-be-doing">What research should we be doing?</h3>
+
+<p>Models are improving at a breakneck speed! Harnesses that are required for a specific model version
+can become obsolete for the next generation of the same model. Any research that tries to box in the
+capabilities of the model is not very likely to survive model improvements.</p>
+
+<p><strong>Open-Weight Models:</strong> These models while not as performant as the proprietary models but they can be useful from a privacy and efficiency point-of-view. However, currently these models lack the ecosystem for getting the user feedback in the loop to improve these models.
+Training these models remains super hard and inefficient.</p>
+
+<p><strong>Specialized Models:</strong> Smaller specialized models could prove to be more efficient than the large language models.</p>
+
+<p><strong>Stronger Guarantees:</strong> We should be developing techniques that can provide stronger guarantees about the system and ways to more efficiently verify the outputs of the models.</p>
+
+<p><strong>Industry Problems:</strong> We also should not be restricting ourselves in terms of the problems we tackle. Benefit of academia is that we can take different approaches than industry to tackle problems.</p>
+
+<h3 id="what-will-sosp-look-like-in-2030">What will SOSP look like in 2030?</h3>
+
+<p>Given the attack of LLMs on the field of mathematics, one might be inclined to believe the pessimistic worst-case scenario
+that maybe by 2030, SOSP would cease to exist. Given the “Navier Stokes” incident and the subsequent release of lean proofs
+for various open math problems, the doom-scroller in me thinks that the pessimistic case might just become the reality of our world.</p>
+
+<p>However, the panelists did provide a far more believable scenario that there will be an cambrian explosion of papers with certain themes. Formal Verification papers,
+New Hardware systems papers, and Bespoke systems papers will probably dominate the SOSP schedule in the coming years.
+We may even see a collapse in reliability of systems (the reliability researcher in me was very happy to hear this as this hopefully indicates some sort of job security :P).
+Finally, there was consensus that with the speed of advancement on show at the moment, one really can not predict what is going to happen in the next few months let alone in the next few years.</p>
+
+<p>If you want to provide your opinion or thoughts on what SOSP will/should look like in 2030, consider completing this very short <a href="https://forms.gle/Lk3gZgBfm4xBqomZ9">survey</a> that I have set up.</p>
+
+<h3 id="what-should-we-be-teaching-students">What should we be teaching students?</h3>
+
+<p>Clearly, the rise of LLMs and agents has not just been disruptive in research but also in teaching.
+While the purists (which I think I am one of?) believe that students should learn the fundamentals of computer science,
+this may not be what students believe is the actual thing they want to learn.</p>
+
+<p>The panelists also shared the purist viewpoint that it is important to learn the fundamentals and nothing about the first couple
+of years of undergraduate should change as that is the period that teaches the students to learn the fundamentals.
+For later years and masters courses, the projects could instead focus on getting students to use AI to build better systems or policies in constrained settings to better teach students on how to interact with models.
+Panelists also thought that the people who are most effective with agents are the people that truly understand the concepts
+at a fundamental level. But there was a shared concern among the panelists that now they probably have to justify why they are teaching
+certain material to the students. Another concern was how do we actually check if students are actually learning and not just offloading
+the actual programming tasks to their favourite LLM. The panelists believe that the future of grading is going to be in-class grading
+which might require students to explain what they did and how they did it.</p>
+
+<p>The thing we ideally want to teach students is that for anything they build, they will be the ones held responsible and accountable for their software.
+This has been implicit so far in almost all courses, the rise of LLMs necessitates that this becomes an explicit learning goal.</p>
+
+  </article>
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer>
+
+  <div class="wrapper">
+    &copy; Copyright 2026 Vaastav Anand.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+<script src="/assets/js/katex.js"></script>
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-118052019-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+
+</html>

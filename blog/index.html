@@ -1,26 +1,282 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div class="header-bar">
-  <h1>{{ site.blog_name }}</h1>
-  <h2>{{ site.blog_description }}</h2>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+
+  <title>Vaastav Anand</title>
+  <meta name="description" content="Vaastav Anand is a Doctoral Researcher at MPI-SWS working under the supervision of Dr. Antoine Kaufmann and Dr. Deepak Garg.
+">
+
+  <link href="assets/css/rotating-card.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/blog/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        <strong>Vaastav</strong> Anand
+    </span>
+    
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="/">About</a>
+
+        <!-- Pages -->
+        
+          
+        
+          
+            <a class="page-link" href="/education/">Education</a>
+          
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="/misc/">Misc</a>
+          
+        
+          
+            <a class="page-link" href="/publications/">Publications</a>
+          
+        
+          
+            <a class="page-link" href="/service/">Service</a>
+          
+        
+          
+            <a class="page-link" href="/teaching/">Teaching</a>
+          
+        
+          
+            <a class="page-link" href="/team/">Team</a>
+          
+        
+          
+            <a class="page-link" href="/work/">Work</a>
+          
+        
+          
+        
+
+        <!-- Blog -->
+        <a class="page-link" href="/blog/">Blog</a>
+
+        <!-- CV link -->
+        <!-- <a class="page-link" href="/assets/pdf/CV.pdf">vitae</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="header-bar">
+  <h1>The Coffee Corner</h1>
+  <h2>A tech, lifestyle, and sports blog</h2>
 </div>
 
 
 <ul class="post-list">
-  {% for post in paginator.posts %}
+  
     <li>
-      <h2><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-      <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</p>
-      <p>{{ post.description }}</p>
+      <h2><a class="post-title" href="/blog/2026/PACMI26-Panel-Report/">Summary of the PACMI 2026 Panel Discussion on Systems Research in the AGI Era</a></h2>
+      <p class="post-meta">September 29, 2026</p>
+      <p></p>
       <p>
-          {% for tag in post.tags %}
-          <a class="post" href="/tags/{{tag}}">#{{tag}}</a>{% unless forloop.last %}, {% endunless %}
-          {% endfor %}
+          
+          <a class="post" href="/tags/research">#research</a>, 
+          
+          <a class="post" href="/tags/tech">#tech</a>
+          
       </p>
     </li>
-  {% endfor %}
+  
+    <li>
+      <h2><a class="post-title" href="/blog/2025/Beginner-guide-for-grad-students/">Beginner guide for novice researchers</a></h2>
+      <p class="post-meta">August 28, 2025</p>
+      <p></p>
+      <p>
+          
+          <a class="post" href="/tags/research">#research</a>, 
+          
+          <a class="post" href="/tags/tech">#tech</a>
+          
+      </p>
+    </li>
+  
+    <li>
+      <h2><a class="post-title" href="/blog/2025/Do-you-know-what-I-did-last-summer/">Do you know what I did last summer?</a></h2>
+      <p class="post-meta">February 18, 2025</p>
+      <p></p>
+      <p>
+          
+          <a class="post" href="/tags/research">#research</a>, 
+          
+          <a class="post" href="/tags/tech">#tech</a>
+          
+      </p>
+    </li>
+  
+    <li>
+      <h2><a class="post-title" href="/blog/2024/Observability-in-the-quantum-age/">Observability in the Quantum Age</a></h2>
+      <p class="post-meta">November 1, 2024</p>
+      <p></p>
+      <p>
+          
+          <a class="post" href="/tags/tech">#tech</a>, 
+          
+          <a class="post" href="/tags/research">#research</a>
+          
+      </p>
+    </li>
+  
+    <li>
+      <h2><a class="post-title" href="/blog/2023/Systems-Trivia-Behind-The-Scenes/">Systems Trivia - Behind The Scenes</a></h2>
+      <p class="post-meta">July 19, 2023</p>
+      <p></p>
+      <p>
+          
+          <a class="post" href="/tags/tech">#tech</a>, 
+          
+          <a class="post" href="/tags/trivia">#trivia</a>, 
+          
+          <a class="post" href="/tags/research">#research</a>
+          
+      </p>
+    </li>
+  
+    <li>
+      <h2><a class="post-title" href="/blog/2019/Reproduction-Cost/">Reproduction of "Scalability! But at what COST!"</a></h2>
+      <p class="post-meta">July 11, 2019</p>
+      <p></p>
+      <p>
+          
+          <a class="post" href="/tags/tech">#tech</a>, 
+          
+          <a class="post" href="/tags/research">#research</a>
+          
+      </p>
+    </li>
+  
+    <li>
+      <h2><a class="post-title" href="/blog/2018/Under-the-radar-cheap-defenders/">Under the radar cheap defenders</a></h2>
+      <p class="post-meta">August 22, 2018</p>
+      <p></p>
+      <p>
+          
+          <a class="post" href="/tags/fpl">#fpl</a>
+          
+      </p>
+    </li>
+  
+    <li>
+      <h2><a class="post-title" href="/blog/2017/Introduction-to-U3D-file-format/">A Beginner's Introduction to U3D file format</a></h2>
+      <p class="post-meta">December 30, 2017</p>
+      <p></p>
+      <p>
+          
+          <a class="post" href="/tags/tech">#tech</a>
+          
+      </p>
+    </li>
+  
+    <li>
+      <h2><a class="post-title" href="/blog/2017/Generating-3D-PDFs-with-U3D/">Embedding 3D objects in PDFs using U3D files</a></h2>
+      <p class="post-meta">December 29, 2017</p>
+      <p></p>
+      <p>
+          
+          <a class="post" href="/tags/tech">#tech</a>
+          
+      </p>
+    </li>
+  
 </ul>
 
-{% include pagination.html %}
+
+
+
+      </div>
+    </div>
+
+    <footer>
+
+  <div class="wrapper">
+    &copy; Copyright 2026 Vaastav Anand.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+<script src="/assets/js/katex.js"></script>
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-118052019-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+
+</html>

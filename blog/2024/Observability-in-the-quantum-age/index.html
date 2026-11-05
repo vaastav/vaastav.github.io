@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  <meta name="keywords" content="quantum networks, observability">
+  
+
+  <title>Vaastav Anand | Observability in the Quantum Age</title>
+  <meta name="description" content="Vaastav Anand is a Doctoral Researcher at MPI-SWS working under the supervision of Dr. Antoine Kaufmann and Dr. Deepak Garg.
+">
+
+  <link href="assets/css/rotating-card.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/blog/2024/Observability-in-the-quantum-age/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        <strong>Vaastav</strong> Anand
+    </span>
+    
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="/">About</a>
+
+        <!-- Pages -->
+        
+          
+        
+          
+            <a class="page-link" href="/education/">Education</a>
+          
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="/misc/">Misc</a>
+          
+        
+          
+            <a class="page-link" href="/publications/">Publications</a>
+          
+        
+          
+            <a class="page-link" href="/service/">Service</a>
+          
+        
+          
+            <a class="page-link" href="/teaching/">Teaching</a>
+          
+        
+          
+            <a class="page-link" href="/team/">Team</a>
+          
+        
+          
+            <a class="page-link" href="/work/">Work</a>
+          
+        
+          
+        
+
+        <!-- Blog -->
+        <a class="page-link" href="/blog/">Blog</a>
+
+        <!-- CV link -->
+        <!-- <a class="page-link" href="/assets/pdf/CV.pdf">vitae</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Observability in the Quantum Age</h1>
+    <p class="post-meta">November 1, 2024</p>
+  </header>
+
+  <article class="post-content">
+    <p>Quantum Internet and quantum networks are slated to play an important role in the future of cloud and distributed computing by enabling a new class of
+networked applications that are impossible to be implemented using solely classical communication.</p>
+
+<p>In this blog post, we take a look into how traditional observability paradigms such as logs, metrics, and traces can be of use to applications powered by quantum networks. While I have always been interested in the overarching theme of observability in the context of quantum applications, my interest piqued with the publication of QNodeOS[1], an operating system specially designed for enabling quantum networking application by enabling entanglement between two distributed quantum nodes.</p>
+
+<p>You can also read this blog post in its original pdf format <a href="/assets/pdf/anand2024quantumobs.pdf">here</a>.</p>
+
+<h2 id="what-is-a-quantum-networked-application">What is a Quantum Networked Application?</h2>
+
+<p>Quantum networked applications are applications that include multiple nodes communicating over both classical channels as well as quantum channels to perform joint computation. These applications have a mix of classical and quantum executions with continuing interaction between them. This is in stark contrast to quantum computation applications, where one quantum program can be executed in a single batch, without the need to keep quantum states live while waiting for input from other parts of the execution.</p>
+
+<p>Common examples of such applications include Quantum Blind Computation, Delegated Quantum Computation, Quantum Key Distribution, among others.</p>
+
+<h2 id="the-need-for-visibility">The Need for Visibility</h2>
+
+<p>While quantum networked applications remain in its nascency, developers deeply care about the performance and efficacy of these applications.
+This need will only be further exacerbated in a true realization of a quantum internet, where the number of nodes communicating would be far greater than just two. 
+Thus, the key requirement for effectively doing performance analysis is to have visibility into the internals of the system and to effectively track the execution across component boundaries.</p>
+
+<h3 id="challenges">Challenges</h3>
+
+<p>However, gaining visibility in quantum network applications is challenging for many reasons.</p>
+
+<ul>
+  <li><strong>Heterogeneous Applications</strong>: these applications are inherently heterogeneous. They are composed of mixed classical and quantum tasks that depend on each other in different ways and often require both classical communication as well as quantum communication performed by dedicated quantum processors and networking units. Thus, we need to track observability not only across network boundaries but also across processor boundaries.</li>
+  <li><strong>Non-deterministic Nature</strong>: these applications are probabilistic and non-deterministic. The success of the application is often highly dependent on the quality and the fidelity of the entangled states generated. Thus, these applications may require many different executions to gain a meaningful result. As a result, more specialized metrics need to be calculated and tracked on a per-application basis.</li>
+  <li><strong>Multiple Sources of Errors</strong>: there are a lot of sources of error that can degrade the performance of the system. These may be decoherence errors that cause the quantum state to decohere or collapse as well as errors in application of quantum gates or errors in performing measurements. Thus, the different sources must be accounted for and tracked during the execution which requires obtaining deep low-level visibility.</li>
+  <li><strong>High Resource Cost</strong>: gaining insight into the quantum states is a difficult and resource consuming process. For example, performing quantum state tomography to measure state fidelity for even a two-qubit state requires performing measurements with different settings to get the full probability density matrix of the state. Thus, we may need to redesign observability techniques to make them more efficiently applicable for quantum networked systems.</li>
+</ul>
+
+<h2 id="observability-a-first-class-citizen">Observability: A First Class Citizen</h2>
+
+<p>We propose that to enable performance analysis of quantum networked applications, observability must be treated as a first class citizen in the design and implementations of operating systems enabling quantum networked applications.</p>
+
+<p>To overcome the challenges, we need to design dedicated observability units that can track the execution across heterogeneous components and collect relevant metrics associated with the applications.
+We present our vision of native observability support in quantum networked applications within the context of the design of QNodeOS, the first functional general purpose operating system designed for quantum network applications. Here is our proposed augmented version of QNodeOS.</p>
+
+<p><img src="/assets/img/qnodeos_observability.png" alt="qnodeos_observability" /></p>
+
+<p>The original QNodeOS design consists of three parts, (i) a Classical Network Processing Unit (CNPU) that handles the execution of the classical part of the user program, (ii) a Quantum Network Processing Unit (QNPU) that executes the quantum part of the user program and manages the underlying resources provided by the quantum device - namely entanglement and qubits, and (iii) a quantum device that provides the quantum resources.
+We augment the design by modifying the CNPU and QNPU with dedicated observability units that are responsible for providing the three pillars of observability.</p>
+
+<h3 id="metrics">Metrics</h3>
+
+<p>For quantum network systems, there are a variety of possible metrics developers might need to track.
+There are two different classes of metrics that need to be measured and monitored - (i) classical metrics, and (ii) quantum metrics.</p>
+
+<p><em>Classical metrics</em> represent the class of metrics that can be measured using classical techniques and do not require any quantum measurements. Common examples of these metrics include end-to-end latency, server throughput, resource utilization, and power usage. Diagnosing issues requires collecting classical metrics about the quantum aspects of the system. For latency, the developers might additionally want to measure the latency (or waiting time) for generating 1 entangled pair of qubits. For throughput, possible measures include throughput of the number of qubits generated by a quantum device, throughput for the number of entangled pairs generated per second, throughput of the total number of successful entanglement swapping (or teleportation) attempts. For utilization, a sensible metric might be the number of physical qubits utilized per second or the number of logical qubits utilized per second. Utilization metrics might also include metrics about the link utilization of the classical and quantum communication channels between two neighboring nodes. These metrics would need to be tracked by both the CNPU and QNPU.</p>
+
+<p><em>Quantum metrics</em> are metrics pertaining to the quantum state and require quantum solutions. For example, the most popular example of a quantum metric is fidelity. In a quantum network application, a developer might want to track different fidelity metrics.  Fidelity metrics could include the fidelity of the initial states, fidelity of the entangled states, or fidelity of the final computation result.
+Other quantum metrics include metrics that measure the quality of the entanglement. For example, entanglement entropy measures the quality of the entanglement of a pure state. Some quantum applications even have pre-requisites on the quality of entanglement before execution can happen. For example, the E91 protocol for entanglement-based quantum key distribution requires that the prepared entangled state be a state such that it violates the CHSH inequality. As not all entangled states violate the inequality, it becomes imperative that the quality of the entanglement must be measured. These metrics would need to be tracked by the QNPU.</p>
+
+<p>A key difference between classical and quantum metrics is that quantum metrics are often second order metrics. This is because, to calculate a single value for these metrics, we require multiple measurements, sometimes in the order of thousands, as is the case when using quantum tomography for calculating the fidelity of the entangled state. Thus, we also want to track metrics about these quantum metrics, such as number of measurements per calculation of the metric and resources spent calculating the metric. Moreover, we might need to use sampling strategies to overcome the high resource requirements of measuring quantum metrics.</p>
+
+<h3 id="tracking-execution">Tracking Execution</h3>
+
+<p><em>Traces:</em> Traditionally, traces track the execution of a request through the different components of the system.
+In classic settings, tracing requires propagating a request-specific context across the various component boundaries often demarcated by individual deployment units.
+However, for quantum network systems, we are operating in a heterogeneous setting with two different processor components providing different capabilities. Thus,to obtain complete executions, we need to now propagate the execution context across both the processor boundaries in addition to the network boundaries to get a full picture of the execution of the system.</p>
+
+<p>To correctly provide tracing capabilities, we propose modifying the CNPU and QNPU design in two ways. First, the CNPU of one node must propagate the context to the CNPU of the other node to establish context propagation over the classical communication channel between the two CNPUs. Second, the execution context must be propagated through the CNPU-QNPU channel which can then further be propagated and attached to the communication with the QNPU of a neighboring node. Propagating the context into the QNPU allows attaching information about the local quantum execution to the trace of the application as well as ensuring that all possible entanglement generation requests and communication with neighboring nodes is correctly attributed to the application.
+This context propagation is important, as it allows us to correctly attribute usage of quantum resources for different applications especially if there are multiple applications executing over the quantum network at the same time.</p>
+
+<p><em>Logs:</em> Traditionally, logs capture discrete events within the system. For quantum network systems, there are two distinct sources of events that the user might want to capture – (i) events from CNPU, i.e., the execution of the classical part of the program, and (ii) events from QNPU, i.e., the execution of the quantum part of the program. However, not all events in the two processor units might be specific to a given user program or application. Some of them might simply be housekeeping events for the specific processing unit. Thus, both types of events need to be tracked as well as easily differentiated.</p>
+
+<h2 id="call-to-action">Call-to-Action</h2>
+
+<p>The lack of visibility into the performance and execution of quantum applications has the potential to completely block the quantum internet revolution.
+We believe we have only scratched the surface of the power that observability techniques can provide in the design and maintenance of quantum network systems.
+We argue that the quantum systems community should work together in developing solutions and techniques that can truly unleash the full power of observability
+and help in the fulfillment of the immense promise of quantum internet.</p>
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li>Donne CD, Iuliano M, van der Vecht B, Ferreira GM, Jirovská H, van der Steenhoven T, Dahlberg A, Skrzypczyk M, Fioretto D, Teller M, Filippov P. Design and demonstration of an operating system for executing applications on quantum network nodes. arXiv preprint arXiv:2407.18306. 2024 Jul 25.</li>
+</ol>
+
+  </article>
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer>
+
+  <div class="wrapper">
+    &copy; Copyright 2026 Vaastav Anand.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+<script src="/assets/js/katex.js"></script>
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-118052019-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+
+</html>
